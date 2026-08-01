@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#FBF6EF">
 <title>Crown Crate — Luxury Gift Hampers | Unbox Royalty. Feel the Love.</title>
-<meta name="description" content="Crown Crate curates hand-packed luxury gift hampers for weddings, birthdays, festivals, corporate gifting and every moment in between. Personalised, beautifully wrapped, delivered across India.">
+<meta name="description" content="Crown Crate curates hand-packed luxury gift hampers for weddings, birthdays, festivals and every moment in between — beautifully wrapped and delivered across Ghaziabad, Noida, Delhi and the wider NCR.">
 <meta name="author" content="Crown Crate">
 <link rel="icon" href="assets/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="assets/favicon-64.png">
@@ -22,7 +22,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Store","name":"Crown Crate","slogan":"Unbox Royalty. Feel the Love.","description":"Luxury hand-packed gift hampers for every occasion.","image":"assets/logo-512.png","email":"kartikv627@gmail.com","telephone":"+91-91491-81502","address":{"@type":"PostalAddress","addressLocality":"Ghaziabad","addressRegion":"Uttar Pradesh","addressCountry":"IN"},"priceRange":"₹₹","sameAs":["https://instagram.com/crowncrate_kartik"]}
+{"@context":"https://schema.org","@type":"Store","name":"Crown Crate","slogan":"Unbox Royalty. Feel the Love.","description":"Luxury hand-packed gift hampers for every occasion, delivered across Delhi NCR.","image":"assets/logo-256.png","telephone":"+91-91491-81502","address":{"@type":"PostalAddress","addressLocality":"Ghaziabad","addressRegion":"Uttar Pradesh","addressCountry":"IN"},"areaServed":["Ghaziabad","Noida","Greater Noida","Delhi","Faridabad","Gurugram"],"priceRange":"₹₹","sameAs":["https://instagram.com/crowncrate_kartik"]}
 </script>
 
 <style>
@@ -75,7 +75,7 @@
 }
 
 *,*::before,*::after{ box-sizing:border-box; margin:0; padding:0; }
-html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth; scroll-padding-top:calc(var(--nav-h) + 24px); overflow-x:clip; }
+html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth; scroll-padding-top:calc(var(--nav-h) + 24px); }
 body{
   background:var(--cream);
   color:var(--ink);
@@ -367,7 +367,7 @@ h1,h2,h3,h4{ font-family:'Marcellus',Georgia,serif; font-weight:400; letter-spac
 /* ============================================================
    HERO — 3D
    ============================================================ */
-.hero{ position:relative; height:210svh; }
+.hero{ position:relative; height:185svh; }
 .hero-stick{ position:sticky; top:0; height:100svh; min-height:600px; display:flex; align-items:center; overflow:clip; }
 .no-webgl .hero, html.rm .hero{ height:auto; }
 .no-webgl .hero-stick, html.rm .hero-stick{ position:static; height:auto; min-height:88svh; padding:clamp(40px,6vw,80px) 0; }
@@ -411,7 +411,8 @@ h1,h2,h3,h4{ font-family:'Marcellus',Georgia,serif; font-weight:400; letter-spac
 .hero-marks div span{ font-size:.62rem; letter-spacing:.22em; text-transform:uppercase; color:var(--muted-soft); }
 
 /* trust strip */
-.trust{ position:relative; z-index:5; margin-top:calc(-1 * clamp(44px,5vw,64px)); }
+.trust{ position:relative; z-index:5; margin-top:calc(-1 * clamp(56px,6vw,84px)); }
+#categories{ padding-top:clamp(52px,6vw,88px); }
 .hero-in,.hero-scroll{ transition:opacity 200ms linear; }
 .trust-in{
   display:grid; grid-template-columns:repeat(5,1fr); gap:4px;
@@ -572,26 +573,7 @@ input[type=range]::-moz-range-thumb{ width:22px; height:22px; border-radius:50%;
 }
 .frame-badge b{ display:block; font-family:'Cormorant Garamond',serif; font-size:2rem; color:var(--gold-text); line-height:1; }
 .frame-badge span{ font-size:.62rem; letter-spacing:.2em; text-transform:uppercase; color:var(--muted-soft); }
-.tilt{ transform-style:preserve-3d; transition:transform 600ms var(--ease); will-change:transform; }
-
-.coll-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(14px,1.8vw,24px); }
-.coll{
-  position:relative; border-radius:var(--r-xl); overflow:hidden; min-height:clamp(320px,38vw,460px);
-  display:flex; align-items:flex-end; box-shadow:var(--sh-2);
-  transition:transform 640ms var(--ease), box-shadow 640ms var(--ease);
-}
-.coll:hover{ transform:translateY(-8px); box-shadow:var(--sh-4); }
-.coll .ph{ position:absolute; inset:0; }
-.coll:hover .ph img{ transform:scale(1.08); }
-.coll-veil{ position:absolute; inset:0; background:linear-gradient(175deg,rgba(43,29,17,.05) 30%,rgba(43,29,17,.72)); }
-.coll-body{ position:relative; z-index:2; padding:clamp(20px,2.4vw,32px); color:var(--warm-white); display:grid; gap:10px; }
-.coll-body h3{ font-size:clamp(1.3rem,2vw,1.75rem); color:var(--warm-white); }
-.coll-body p{ font-size:.86rem; color:rgba(255,253,250,.82); font-weight:300; max-width:34ch; }
-.coll-body .link-u{ color:var(--champagne-lt); }
-.coll-body .link-u::after{ background:var(--champagne-lt); }
-.coll.tall{ min-height:clamp(360px,42vw,520px); }
-
-/* ============================================================
+.tilt{ transform-style:preserve-3d; transition:transform 600ms var(--ease); will-change:transform; }/* ============================================================
    REVIEWS
    ============================================================ */
 .rev-rail{ display:flex; gap:22px; overflow-x:auto; scroll-snap-type:x mandatory; padding:6px 2px 26px; scrollbar-width:thin; }
@@ -613,27 +595,6 @@ input[type=range]::-moz-range-thumb{ width:22px; height:22px; border-radius:50%;
 .rail-nav{ display:flex; gap:8px; }
 
 /* video testimonials */
-.vid-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(14px,2vw,24px); }
-.vid{
-  position:relative; aspect-ratio:9/12; border-radius:var(--r-lg); overflow:hidden; box-shadow:var(--sh-2);
-  transition:transform 620ms var(--ease), box-shadow 620ms var(--ease);
-}
-.vid:hover{ transform:translateY(-7px); box-shadow:var(--sh-3); }
-.vid .ph{ position:absolute; inset:0 } .vid:hover .ph img{ transform:scale(1.07) }
-.vid-veil{ position:absolute; inset:0; background:linear-gradient(180deg,rgba(43,29,17,.16),rgba(43,29,17,.6)); }
-.play{
-  position:absolute; inset:0; margin:auto; width:66px; height:66px; border-radius:50%;
-  display:grid; place-items:center; color:var(--ink);
-  background:rgba(255,253,250,.92); box-shadow:var(--sh-2);
-  transition:transform 480ms var(--spring), background var(--t-mid);
-}
-.play::after{ content:''; position:absolute; inset:-10px; border-radius:50%; border:1px solid rgba(255,253,250,.6); animation:pulse 2.6s var(--ease) infinite; }
-@keyframes pulse{ 0%{ transform:scale(.9); opacity:.9 } 100%{ transform:scale(1.35); opacity:0 } }
-.vid:hover .play{ transform:scale(1.09); background:var(--warm-white); }
-.vid-cap{ position:absolute; left:0; right:0; bottom:0; z-index:2; padding:20px 18px; color:var(--warm-white); }
-.vid-cap b{ font-family:'Marcellus',serif; font-weight:400; font-size:1rem; display:block }
-.vid-cap span{ font-size:.72rem; color:rgba(255,253,250,.76) }
-
 /* ============================================================
    WHY / STATS / CORPORATE
    ============================================================ */
@@ -682,36 +643,7 @@ input[type=range]::-moz-range-thumb{ width:22px; height:22px; border-radius:50%;
 /* ============================================================
    GIFT CUSTOMIZER
    ============================================================ */
-.cust{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(24px,3.4vw,52px); align-items:start; }
-.cust-preview{
-  position:sticky; top:calc(var(--nav-h) + 24px);
-  border-radius:var(--r-xl); overflow:hidden; box-shadow:var(--sh-3); aspect-ratio:1;
-  display:grid; place-items:center; padding:26px;
-  background:radial-gradient(60% 60% at 50% 34%, var(--warm-white), var(--beige) 70%, var(--beige-deep));
-}
-#giftSvg{ width:100%; height:100%; max-width:460px; }
-.cust-panel{ display:grid; gap:24px; }
-.opt-row{ display:grid; gap:10px; }
-.opt-row > b{ font-size:.7rem; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); font-weight:500; }
-.swatches{ display:flex; flex-wrap:wrap; gap:10px; }
-.sw{
-  width:46px; height:46px; border-radius:50%; border:2px solid transparent; position:relative;
-  box-shadow:var(--sh-1); transition:transform var(--t-mid) var(--spring), border-color var(--t-mid);
-}
-.sw:hover{ transform:scale(1.09); }
-.sw[aria-pressed="true"]{ border-color:var(--ink); }
-.sw[aria-pressed="true"]::after{ content:'✓'; position:absolute; inset:0; display:grid; place-items:center; color:#fff; font-size:.8rem; text-shadow:0 1px 3px rgba(0,0,0,.4); }
-.pick{ display:flex; flex-wrap:wrap; gap:8px; }
-.pick button{
-  min-height:44px; padding:0 16px; border-radius:var(--r-pill); border:1px solid var(--line);
-  background:var(--warm-white); font-size:.78rem; transition:all var(--t-mid) var(--ease);
-}
-.pick button:hover{ border-color:var(--champagne) }
-.pick button[aria-pressed="true"]{ background:rgba(201,169,106,.18); border-color:var(--champagne); color:var(--gold-text); font-weight:500; }
-.cust-total{ display:flex; align-items:center; justify-content:space-between; gap:16px; padding:20px 22px; border-radius:var(--r-lg); background:var(--warm-white); border:1px solid var(--line-soft); box-shadow:var(--sh-1); }
-.cust-total .price{ font-size:1.9rem }
-
-/* ============================================================
+.cust{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(24px,3.4vw,52px); align-items:start; }/* ============================================================
    FAQ / INSTAGRAM / NEWSLETTER
    ============================================================ */
 .faq{ max-width:840px; margin-inline:auto; border-top:1px solid var(--line); }
@@ -862,14 +794,8 @@ footer.site li a:hover{ color:var(--gold-text); padding-left:5px }
 @media (max-width:1180px){
   .nav-links{ display:none }
   .burger{ display:grid; place-items:center }
-  .brand img{ width:48px; height:48px }
-  .coll-grid{ grid-template-columns:repeat(2,1fr) }
-  .coll.tall{ min-height:0 }
-  .vid-grid{ grid-template-columns:repeat(3,1fr) }
-  .corp-in,.cust,.split{ grid-template-columns:1fr }
-  .split.rev{ direction:ltr }
-  .cust-preview{ position:static; aspect-ratio:4/3 }
-  .hero-marks{ display:none }
+  .brand img{ width:48px; height:48px }.corp-in,.cust,.split{ grid-template-columns:1fr }
+  .split.rev{ direction:ltr }.hero-marks{ display:none }
   .trust-in{ grid-template-columns:repeat(2,1fr) }
 }
 @media (max-width:820px){
@@ -877,12 +803,9 @@ footer.site li a:hover{ color:var(--gold-text); padding-left:5px }
   .qv{ grid-template-columns:1fr }
   .qv-media{ aspect-ratio:4/3; min-height:0 }
   .stats{ grid-template-columns:repeat(2,1fr) }
-  .foot-grid{ grid-template-columns:1fr 1fr }
-  .vid-grid{ grid-template-columns:1fr }
-  .vid{ aspect-ratio:16/10 }
-}
+  .foot-grid{ grid-template-columns:1fr 1fr }}
 @media (max-width:900px){
-  .hero{ height:180svh }
+  .hero{ height:172svh }
   .hero-stick{ align-items:flex-start }
   .hero-in{ padding-top:7vh }
   .hero-copy{ position:relative; z-index:3 }
@@ -895,9 +818,7 @@ footer.site li a:hover{ color:var(--gold-text); padding-left:5px }
   :root{ --nav-h:66px }
   .hero-copy{ max-width:100% }
   .hero-marks div b{ font-size:1.6rem }
-  .cat-grid{ grid-template-columns:repeat(2,1fr) }
-  .coll-grid{ grid-template-columns:1fr }
-  .why-grid{ grid-template-columns:1fr }
+  .cat-grid{ grid-template-columns:repeat(2,1fr) }.why-grid{ grid-template-columns:1fr }
   .ig-grid{ grid-template-columns:repeat(3,1fr) }
   .prod-grid{ grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr)) }
   .trust-in{ grid-template-columns:1fr }
@@ -955,12 +876,10 @@ footer.site li a:hover{ color:var(--gold-text); padding-left:5px }
   <symbol id="i-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4c0 8-4.6 13-11 13H5c0-7 5-13 11-13h4Z"/><path d="M4 20c2.6-4.2 6-7 10.5-8.6"/></symbol>
   <symbol id="i-hand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12V5.6a1.6 1.6 0 0 1 3.2 0V11m0-.4V4.3a1.6 1.6 0 0 1 3.2 0V11m0-.6V6.2a1.6 1.6 0 0 1 3.2 0V14c0 3.6-2.6 6.4-6.2 6.4S5 17.8 5 14.4v-2a1.6 1.6 0 0 1 3-.8"/></symbol>
   <symbol id="i-pen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15.5 4.5 19.5 8.5 8 20H4v-4L15.5 4.5Z"/><path d="m13.6 6.4 4 4"/></symbol>
-  <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8.5 6.3v11.4a.6.6 0 0 0 .93.5l8.7-5.7a.6.6 0 0 0 0-1l-8.7-5.7a.6.6 0 0 0-.93.5Z"/></symbol>
   <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></symbol>
   <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12S6 5.8 12 5.8 21.5 12 21.5 12 18 18.2 12 18.2 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
   <symbol id="i-insta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></symbol>
   <symbol id="i-wa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.7 7.4L3.5 20.5l1.6-4.2A8.5 8.5 0 1 1 20.5 11.6Z"/><path d="M9 9.4c.3 2.6 2.6 4.8 5.2 5.2.6.1 1.3-.3 1.4-.9l.1-.7-2-.9-.8.9a5.4 5.4 0 0 1-2.2-2.2l.9-.8-.9-2-.7.1c-.6.1-1 .7-1 1.3Z"/></symbol>
-  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="2.8" y="5" width="18.4" height="14" rx="2.4"/><path d="m3.6 6.6 8.4 6 8.4-6"/></symbol>
   <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor"><path d="m12 3.6 2.6 5.4 5.9.8-4.3 4.1 1 5.9-5.2-2.8-5.2 2.8 1-5.9L3.5 9.8l5.9-.8L12 3.6Z"/></symbol>
   <symbol id="i-sparkle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 13.7 9l5.5 1.7-5.5 1.7L12 18l-1.7-5.6L4.8 10.7 10.3 9 12 3.5Z"/><path d="M18.6 16.4l.7 2.2 2.2.7-2.2.7-.7 2.2-.7-2.2-2.2-.7 2.2-.7.7-2.2Z"/></symbol>
 </svg>
@@ -987,7 +906,6 @@ footer.site li a:hover{ color:var(--gold-text); padding-left:5px }
           <div class="mega glass" id="megaMenu" role="group" aria-label="Occasion collections"></div>
         </li>
         <li><a href="#corporate">Corporate</a></li>
-        <li><a href="#customizer">Custom</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -1008,10 +926,8 @@ footer.site li a:hover{ color:var(--gold-text); padding-left:5px }
     <li><a href="#top-anchor">Home</a></li>
     <li><a href="#bestsellers">Shop All Hampers</a></li>
     <li><a href="#occasions">Occasions</a></li>
-    <li><a href="#collections">Luxury Collections</a></li>
-    <li><a href="#personalised">Personalised Gifts</a></li>
+    <li><a href="#reviews">Reviews</a></li>
     <li><a href="#corporate">Corporate Gifting</a></li>
-    <li><a href="#customizer">Build a Custom Hamper</a></li>
     <li><a href="#about">About Us</a></li>
     <li><a href="#faq">FAQ</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -1039,12 +955,12 @@ footer.site li a:hover{ color:var(--gold-text); padding-left:5px }
       <p class="lede rv" data-d="3">Hand-packed hampers curated for the moments that deserve more than a default gift — weddings, birthdays, festivals and the quiet in-between.</p>
       <div class="hero-cta rv" data-d="4">
         <a class="btn" href="#bestsellers">Shop Now <svg class="ico" width="17" height="17" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        <a class="btn ghost" href="#customizer"><svg width="17" height="17" aria-hidden="true"><use href="#i-gift"/></svg> Custom Hampers</a>
+        <a class="btn ghost" href="#occasions"><svg width="17" height="17" aria-hidden="true"><use href="#i-gift"/></svg> Shop by Occasion</a>
       </div>
       <div class="hero-marks rv" data-d="5">
         <div><b>4.9</b><span>Rated by 2,400+</span></div>
         <div><b>100%</b><span>Hand-Packed</span></div>
-        <div><b>24h</b><span>Dispatch</span></div>
+        <div><b>24–48h</b><span>Dispatch</span></div>
       </div>
     </div>
   </div>
@@ -1061,7 +977,7 @@ footer.site li a:hover{ color:var(--gold-text); padding-left:5px }
       <div class="trust-cell"><svg width="26" height="26" aria-hidden="true"><use href="#i-gift"/></svg><div><b>Customizable</b><span>Make it uniquely yours</span></div></div>
       <div class="trust-cell"><svg width="26" height="26" aria-hidden="true"><use href="#i-cal"/></svg><div><b>Every Occasion</b><span>Birthday, wedding &amp; more</span></div></div>
       <div class="trust-cell"><svg width="26" height="26" aria-hidden="true"><use href="#i-shield"/></svg><div><b>Secure Packaging</b><span>Delivered with utmost care</span></div></div>
-      <div class="trust-cell"><svg width="26" height="26" aria-hidden="true"><use href="#i-truck"/></svg><div><b>Pan India Delivery</b><span>Fast &amp; reliable dispatch</span></div></div>
+      <div class="trust-cell"><svg width="26" height="26" aria-hidden="true"><use href="#i-truck"/></svg><div><b>Delhi NCR Delivery</b><span>Ghaziabad · Noida · Delhi</span></div></div>
     </div>
   </div>
 </div>
@@ -1085,48 +1001,11 @@ footer.site li a:hover{ color:var(--gold-text); padding-left:5px }
     <div class="section-head center rv">
       <span class="eyebrow center">Best Sellers</span>
       <h2 class="h-lg">Our most-gifted hampers</h2>
-      <p>Every crate below is packed by hand in our Ghaziabad studio, sealed with a wax crown and shipped within 24 hours.</p>
+      <p>Every crate below is packed by hand in our Ghaziabad studio, sealed with a wax crown and dispatched within 24–48 hours.</p>
     </div>
     <div class="prod-grid" id="bestGrid"></div>
     <div style="text-align:center;margin-top:52px" class="rv">
       <a class="btn ghost" href="#occasions">View All Hampers <svg class="ico" width="17" height="17" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ LUXURY COLLECTIONS ============ -->
-<section class="section" id="collections">
-  <div class="wrap">
-    <div class="section-head rv">
-      <span class="eyebrow">Luxury Collections</span>
-      <h2 class="h-lg">Three signatures, one standard</h2>
-      <p>Collections built around a feeling — not a price point. Each one has its own palette, ribbon and scent story.</p>
-    </div>
-    <div class="coll-grid" id="collGrid"></div>
-  </div>
-</section>
-
-<!-- ============ PERSONALISED ============ -->
-<section class="section tint-sand" id="personalised">
-  <div class="wrap">
-    <div class="split">
-      <div class="rv">
-        <span class="eyebrow">Personalised Gifts</span>
-        <h2 class="h-lg" style="margin-top:20px">Their name. Your words.<br>Our craft.</h2>
-        <p class="lede" style="margin-top:20px">Engraved mugs, foil-pressed cards, monogrammed ribbon and a handwritten note in your own words — added to any hamper, at no rush fee.</p>
-        <ul class="corp-list" style="margin-top:28px">
-          <li><svg width="19" height="19" aria-hidden="true"><use href="#i-pen"/></svg><span><b>Handwritten note</b> — calligraphed on cotton card, sealed in wax.</span></li>
-          <li><svg width="19" height="19" aria-hidden="true"><use href="#i-sparkle"/></svg><span><b>Gold-foil monogram</b> on the crate lid and ribbon.</span></li>
-          <li><svg width="19" height="19" aria-hidden="true"><use href="#i-gift"/></svg><span><b>Photo &amp; date engraving</b> on candles, mugs and keepsake boxes.</span></li>
-        </ul>
-        <div style="margin-top:34px;display:flex;gap:14px;flex-wrap:wrap">
-          <a class="btn" href="#customizer">Personalise a Hamper <svg class="ico" width="17" height="17" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        </div>
-      </div>
-      <div class="frame tilt rv" data-d="2">
-        <div class="ph"><img data-src="PERSONALISED" alt="A personalised Crown Crate hamper with monogrammed ribbon and engraved candle" loading="lazy" decoding="async" width="900" height="1125"><span class="skel"></span><span class="shine"></span></div>
-        <div class="frame-badge"><b>48h</b><span>Personalisation</span></div>
-      </div>
     </div>
   </div>
 </section>
@@ -1173,18 +1052,6 @@ footer.site li a:hover{ color:var(--gold-text); padding-left:5px }
   </div>
 </section>
 
-<!-- ============ VIDEO TESTIMONIALS ============ -->
-<section class="section" id="stories">
-  <div class="wrap">
-    <div class="section-head center rv">
-      <span class="eyebrow center">Video Testimonials</span>
-      <h2 class="h-lg">Unboxings, in their own words</h2>
-      <p>Real reactions filmed by our customers the moment the crown seal breaks.</p>
-    </div>
-    <div class="vid-grid" id="vidGrid"></div>
-  </div>
-</section>
-
 <!-- ============ ABOUT ============ -->
 <section class="section tint-sand" id="about">
   <div class="wrap">
@@ -1226,8 +1093,8 @@ footer.site li a:hover{ color:var(--gold-text); padding-left:5px }
     <div class="stats rv" style="margin-top:clamp(32px,4vw,54px)">
       <div class="stat"><b data-count="2400" data-suffix="+">0</b><span>Crates Delivered</span></div>
       <div class="stat"><b data-count="4.9" data-dec="1">0</b><span>Average Rating</span></div>
-      <div class="stat"><b data-count="120" data-suffix="+">0</b><span>Cities Served</span></div>
-      <div class="stat"><b data-count="24" data-suffix="h">0</b><span>Dispatch Window</span></div>
+      <div class="stat"><b data-count="6" data-suffix="">0</b><span>NCR Cities Served</span></div>
+      <div class="stat"><b class="nocount">24–48h</b><span>Dispatch Window</span></div>
     </div>
   </div>
 </section>
@@ -1242,97 +1109,29 @@ footer.site li a:hover{ color:var(--gold-text); padding-left:5px }
         <div>
           <span class="eyebrow">Corporate Gifting</span>
           <h2 class="h-lg" style="margin-top:20px">Gifting at scale,<br>without looking like it.</h2>
-          <p class="lede" style="margin-top:20px">Onboarding kits, Diwali hampers, client thank-yous and milestone boxes — co-branded, GST-invoiced and delivered to hundreds of addresses from one sheet.</p>
+          <p class="lede" style="margin-top:20px">Onboarding kits, Diwali hampers, client thank-yous and milestone boxes — co-branded, hand-packed in Ghaziabad and delivered across Delhi NCR.</p>
           <ul class="corp-list">
-            <li><svg width="19" height="19" aria-hidden="true"><use href="#i-check"/></svg><span>Volume pricing from 25 crates, with dedicated account support.</span></li>
+            <li><svg width="19" height="19" aria-hidden="true"><use href="#i-check"/></svg><span>Volume pricing on bulk orders, with one point of contact throughout.</span></li>
             <li><svg width="19" height="19" aria-hidden="true"><use href="#i-check"/></svg><span>Custom-printed sleeves, ribbon and insert cards in your brand palette.</span></li>
-            <li><svg width="19" height="19" aria-hidden="true"><use href="#i-check"/></svg><span>Multi-address dispatch — upload a sheet, we handle the rest.</span></li>
-            <li><svg width="19" height="19" aria-hidden="true"><use href="#i-check"/></svg><span>GST invoicing and delivery reports for finance teams.</span></li>
+            <li><svg width="19" height="19" aria-hidden="true"><use href="#i-check"/></svg><span>Multi-address dispatch across Ghaziabad, Noida, Delhi and Gurugram.</span></li>
+            <li><svg width="19" height="19" aria-hidden="true"><use href="#i-check"/></svg><span>Dispatch within 24–48 hours, with delivery confirmation on WhatsApp.</span></li>
           </ul>
         </div>
 
-        <form class="corp-card glass" id="corpForm" novalidate>
-          <h3 class="h-md">Request a corporate quote</h3>
-          <div class="field">
-            <label for="cName">Your name</label>
-            <input id="cName" name="name" type="text" autocomplete="name" required placeholder="Kartik Verma">
-            <span class="err" id="cNameErr"><svg width="14" height="14" aria-hidden="true"><use href="#i-close"/></svg> Please tell us your name.</span>
+        <div class="corp-card glass">
+          <h3 class="h-md">Planning a bulk order?</h3>
+          <p style="color:var(--muted);font-weight:300;font-size:.95rem">
+            Send us the occasion, the headcount and your budget per crate on WhatsApp — we'll come back with a curation and a quote the same day.
+          </p>
+          <div style="display:grid;gap:10px;margin-top:4px">
+            <div class="totals"><span>Typical turnaround</span><b>Same-day quote</b></div>
+            <div class="totals"><span>Dispatch</span><b>24–48 hours</b></div>
+            <div class="totals"><span>Delivery area</span><b>Delhi NCR</b></div>
           </div>
-          <div class="field">
-            <label for="cEmail">Work email</label>
-            <input id="cEmail" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="you@company.com">
-            <span class="err" id="cEmailErr"><svg width="14" height="14" aria-hidden="true"><use href="#i-close"/></svg> Enter a valid email so we can send the quote.</span>
-          </div>
-          <div class="field">
-            <label for="cQty">Approximate quantity</label>
-            <select id="cQty" name="qty">
-              <option>25 – 50 crates</option><option>50 – 150 crates</option>
-              <option>150 – 500 crates</option><option>500+ crates</option>
-            </select>
-            <span class="hint">Not sure yet? Pick the closest range.</span>
-          </div>
-          <div class="field">
-            <label for="cNote">What's the occasion?</label>
-            <textarea id="cNote" name="note" placeholder="Diwali gifting for our sales team, budget ₹1,500 per crate…"></textarea>
-          </div>
-          <button class="btn wide" type="submit">Request Quote <svg class="ico" width="17" height="17" aria-hidden="true"><use href="#i-arrow"/></svg></button>
-          <p class="hint" style="text-align:center;font-size:.74rem;color:var(--muted-soft)">We reply within one working day. No spam, ever.</p>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ GIFT CUSTOMIZER ============ -->
-<section class="section tint-beige" id="customizer">
-  <div class="fabric" aria-hidden="true"></div>
-  <div class="wrap" style="position:relative;z-index:2">
-    <div class="section-head center rv">
-      <span class="eyebrow center">Gift Customizer</span>
-      <h2 class="h-lg">Build your crate, live</h2>
-      <p>Choose the crate, ribbon and fill — watch the preview update as you go.</p>
-    </div>
-
-    <div class="cust">
-      <div class="cust-preview rv" aria-live="polite">
-        <svg id="giftSvg" viewBox="48 118 304 268" role="img" aria-label="Live preview of your custom hamper"></svg>
-      </div>
-
-      <div class="cust-panel rv" data-d="2">
-        <div class="opt-row">
-          <b>1 · Crate size</b>
-          <div class="pick" id="pickSize" role="group" aria-label="Crate size"></div>
-        </div>
-        <div class="opt-row">
-          <b>2 · Crate finish</b>
-          <div class="swatches" id="pickBox" role="group" aria-label="Crate finish"></div>
-        </div>
-        <div class="opt-row">
-          <b>3 · Ribbon</b>
-          <div class="swatches" id="pickRibbon" role="group" aria-label="Ribbon colour"></div>
-        </div>
-        <div class="opt-row">
-          <b>4 · Fill it with</b>
-          <div class="pick" id="pickItems" role="group" aria-label="Hamper contents, choose any"></div>
-        </div>
-        <div class="field">
-          <label for="giftMsg">5 · Gift message <span style="text-transform:none;letter-spacing:0;color:var(--muted-soft)">(calligraphed by hand)</span></label>
-          <textarea id="giftMsg" maxlength="140" placeholder="Happy anniversary, Ma &amp; Papa — here's to 30 more."></textarea>
-          <span class="hint"><span id="msgCount">0</span>/140 characters · appears on a cotton card, sealed in wax</span>
-        </div>
-        <div class="field">
-          <label for="giftDate">6 · Preferred delivery date</label>
-          <input type="date" id="giftDate">
-          <span class="hint">Dispatch within 24h · Pan-India delivery in 2–5 days</span>
-        </div>
-        <label class="giftopt"><input type="checkbox" id="giftWrap" checked> <span><b>Signature gold wrap &amp; wax crown seal</b><br>Adds ₹149 — included free above ₹2,500.</span></label>
-
-        <div class="cust-total">
-          <div>
-            <span style="font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)">Your crate</span>
-            <div class="price" id="custPrice">₹1,299</div>
-          </div>
-          <button class="btn" id="custAdd">Add to Cart <svg class="ico" width="17" height="17" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          <a class="btn wide" href="https://wa.me/919149181502" target="_blank" rel="noopener">
+            <svg width="17" height="17" aria-hidden="true"><use href="#i-wa"/></svg> Enquire on WhatsApp
+          </a>
+          <p style="text-align:center;font-size:.74rem;color:var(--muted-soft)">+91 91491 81502 · Ghaziabad, Uttar Pradesh</p>
         </div>
       </div>
     </div>
@@ -1340,7 +1139,7 @@ footer.site li a:hover{ color:var(--gold-text); padding-left:5px }
 </section>
 
 <!-- ============ FAQ ============ -->
-<section class="section" id="faq">
+<section class="section tint-beige" id="faq">
   <div class="wrap">
     <div class="section-head center rv">
       <span class="eyebrow center">FAQ</span>
@@ -1385,7 +1184,7 @@ footer.site li a:hover{ color:var(--gold-text); padding-left:5px }
         <p class="msg" id="newsMsg" role="status"></p>
         <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:6px">
           <a class="btn sm ghost" href="https://wa.me/919149181502" target="_blank" rel="noopener"><svg width="16" height="16" aria-hidden="true"><use href="#i-wa"/></svg> WhatsApp Us</a>
-          <a class="btn sm ghost" href="mailto:kartikv627@gmail.com"><svg width="16" height="16" aria-hidden="true"><use href="#i-mail"/></svg> Email Kartik</a>
+          <a class="btn sm ghost" href="https://instagram.com/crowncrate_kartik" target="_blank" rel="noopener"><svg width="16" height="16" aria-hidden="true"><use href="#i-insta"/></svg> Message on Instagram</a>
         </div>
       </div>
     </div>
@@ -1400,11 +1199,10 @@ footer.site li a:hover{ color:var(--gold-text); padding-left:5px }
     <div class="foot-grid">
       <div class="foot-brand">
         <a href="#top-anchor" aria-label="Crown Crate — back to top"><img src="assets/logo-256.png" alt="Crown Crate" width="208" height="208" loading="lazy"></a>
-        <p>Luxury gift hampers, hand-packed in Ghaziabad and delivered across India. Unbox royalty, feel the love.</p>
+        <p>Luxury gift hampers, hand-packed in Ghaziabad and delivered across Delhi NCR. Unbox royalty, feel the love.</p>
         <div class="socials">
           <a href="https://instagram.com/crowncrate_kartik" target="_blank" rel="noopener" aria-label="Crown Crate on Instagram"><svg width="19" height="19" aria-hidden="true"><use href="#i-insta"/></svg></a>
           <a href="https://wa.me/919149181502" target="_blank" rel="noopener" aria-label="Message Crown Crate on WhatsApp"><svg width="19" height="19" aria-hidden="true"><use href="#i-wa"/></svg></a>
-          <a href="mailto:kartikv627@gmail.com" aria-label="Email Crown Crate"><svg width="19" height="19" aria-hidden="true"><use href="#i-mail"/></svg></a>
         </div>
       </div>
       <div>
@@ -1412,9 +1210,9 @@ footer.site li a:hover{ color:var(--gold-text); padding-left:5px }
         <ul>
           <li><a href="#bestsellers">Best Sellers</a></li>
           <li><a href="#occasions">All Hampers</a></li>
-          <li><a href="#collections">Luxury Collections</a></li>
-          <li><a href="#personalised">Personalised Gifts</a></li>
-          <li><a href="#customizer">Build Your Own</a></li>
+          <li><a href="#categories">Featured Categories</a></li>
+          <li><a href="#reviews">Customer Reviews</a></li>
+          <li><a href="#corporate">Corporate Gifting</a></li>
         </ul>
       </div>
       <div>
@@ -1430,17 +1228,17 @@ footer.site li a:hover{ color:var(--gold-text); padding-left:5px }
       <div>
         <h4>Reach Us</h4>
         <ul>
-          <li><a href="mailto:kartikv627@gmail.com">kartikv627@gmail.com</a></li>
           <li><a href="https://wa.me/919149181502" target="_blank" rel="noopener">+91 91491 81502</a></li>
           <li><a href="https://instagram.com/crowncrate_kartik" target="_blank" rel="noopener">@crowncrate_kartik</a></li>
           <li><a href="#corporate">Corporate enquiries</a></li>
-          <li><a href="#faq">Shipping &amp; returns</a></li>
+          <li><a href="#faq">Delivery &amp; returns</a></li>
+          <li>Ghaziabad · Noida · Delhi NCR</li>
         </ul>
       </div>
     </div>
     <div class="foot-bottom">
       <span>© <span id="yr">2026</span> Crown Crate · Founded by Kartik · Ghaziabad, Uttar Pradesh</span>
-      <span class="pay">Hand-packed, every time · UPI · Cards · Net Banking</span>
+      <span class="pay">Hand-packed, every time · Delivering across Delhi NCR</span>
     </div>
   </div>
 </footer>
@@ -1496,7 +1294,8 @@ const RM = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const INR = n => '₹' + n.toLocaleString('en-IN');
 
 /* ---------- Imagery ---------- */
-const PX = (id,w,h) => `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=${w}&h=${h}`;
+const IMG_V = 'v2';   /* bump to force-refresh cached imagery */
+const PX = (id,w,h) => `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=${w}&h=${h}&v=${IMG_V}`;
 const FALLBACK = (seed=0)=>{
   const a = ['#F2E7D8','#EFE3D2','#E8D9C4'][seed%3], b = ['#DDB4A0','#C9A96A','#E4D0A8'][seed%3];
   return 'data:image/svg+xml;utf8,' + encodeURIComponent(
@@ -1511,9 +1310,7 @@ const FALLBACK = (seed=0)=>{
       </g>
     </svg>`);
 };
-const IMG_KEYS = {
-  PERSONALISED:[9594143,900,1125], ABOUT:[12303223,900,1125]
-};
+const IMG_KEYS = { ABOUT:[12303223,900,1125] };
 
 function hydrate(img){
   if(img.dataset.done) return; img.dataset.done='1';
@@ -1578,33 +1375,22 @@ const CATS = [
   {n:'Self Care',  s:'From ₹1,299', img:6119125}
 ];
 
-const COLLS = [
-  {t:'The Ivory Edit',  d:'Cream linen, white cocoa and vanilla-amber candlelight. Our quietest, most elegant crate.', img:7670762, tall:true},
-  {t:'The Rose Gold Suite', d:'Blush ribbon, rose praline and hand-blown blush glass. Made for anniversaries.', img:6074058},
-  {t:'The Champagne Reserve', d:'Gold foil, single-origin chocolate and a wax crown seal. Our flagship.', img:33629664}
-];
-
 const REVIEWS = [
-  {q:'I sent this to my mother in Lucknow and she called me crying. The ribbon, the note, the little wax crown — nothing about it felt bought.', n:'Aditi Sharma', m:'Anniversary Hamper · Lucknow'},
-  {q:'We ordered 140 Diwali crates for our clients. One spreadsheet, zero follow-ups, every single one delivered on time and branded perfectly.', n:'Rohan Mehta', m:'Corporate Gifting · Gurugram'},
-  {q:'The chocolate is genuinely good — not the filler you expect in hampers. My sister has already asked where I got it.', n:'Neha Kulkarni', m:'Cocoa Noir · Pune'},
-  {q:'The personalisation was flawless. Her name in gold foil on the lid, and my handwriting copied onto the card. Worth every rupee.', n:'Karan Bhatia', m:'Monogram Muse · Delhi'},
-  {q:'Ordered on a Tuesday for a Thursday birthday and it arrived a day early, packed beautifully. Crown Crate is my default now.', n:'Sana Qureshi', m:'Celebrate You · Mumbai'},
-  {q:'The baby hamper was the only gift at the shower that people photographed. That says everything.', n:'Priya Nair', m:'Tiny Crown · Kochi'}
-];
-
-const VIDS = [
-  {t:'“She thought it was a cake box.”', s:'Anniversary unboxing · Delhi', img:5872179},
-  {t:'“140 crates, zero chaos.”',        s:'Diwali corporate drop · Gurugram', img:29718209},
-  {t:'“The wax seal got its own reel.”', s:'Wedding trousseau · Jaipur', img:5467099}
+  {q:'I sent this to my mother in Indirapuram and she called me crying. The ribbon, the note, the little wax crown — nothing about it felt bought.', n:'Aditi Sharma', m:'Anniversary Hamper · Ghaziabad'},
+  {q:'Ordered on a Tuesday for a Thursday birthday and it reached Sector 62 a day early, packed beautifully. Crown Crate is my default now.', n:'Sana Qureshi', m:'Celebrate You · Noida'},
+  {q:'The chocolate is genuinely good — not the filler you expect in hampers. My sister in Dwarka has already asked where I got it.', n:'Neha Kulkarni', m:'Cocoa Noir · Delhi'},
+  {q:'We sent 40 Diwali crates to clients across NCR. One list on WhatsApp, zero follow-ups, every single one delivered on time.', n:'Rohan Mehta', m:'Corporate Gifting · Gurugram'},
+  {q:'Same-day delivery to Greater Noida when I forgot an anniversary. Kartik picked up on the first ring and saved me completely.', n:'Karan Bhatia', m:'Blush Romance · Greater Noida'},
+  {q:'The baby hamper was the only gift at the shower that people photographed. That says everything.', n:'Priya Nair', m:'Tiny Crown · Faridabad'}
 ];
 
 const FAQS = [
-  ['How fast do you dispatch and deliver?','Every crate is hand-packed and dispatched within 24 hours of order confirmation. Metro cities usually receive in 2–3 days, and the rest of India in 3–5 days. Same-day delivery is available inside Ghaziabad, Noida and East Delhi if you order before 1pm.'],
-  ['Can I personalise a hamper that is already listed?','Yes — every listed hamper can be personalised. You can add an engraved mug or candle, a gold-foil monogram on the lid, a calligraphed note in your own words, and swap any item you would rather not send. Personalisation adds no rush fee and typically 48 hours.'],
-  ['Do you take corporate orders with GST invoicing?','We do. Volume pricing starts at 25 crates, and every corporate order comes with a GST invoice, co-branded sleeves and ribbon, multi-address dispatch from a single sheet, and a delivery report for your finance team.'],
+  ['How fast do you dispatch and deliver?','Every crate is hand-packed and dispatched within 24–48 hours of order confirmation. Same-day delivery is available in Ghaziabad, Noida and East Delhi if you order before 1pm, and the rest of Delhi NCR usually receives within 1–2 days.'],
+  ['Which areas do you deliver to?','We deliver across Delhi NCR — Ghaziabad, Noida, Greater Noida, Delhi, Faridabad and Gurugram. If you are just outside that ring, message us on WhatsApp and we will tell you honestly whether we can reach you well.'],
+  ['Can I add a gift note or gift wrap?','Yes. Every order includes a free handwritten note, calligraphed on cotton card and sealed in wax. Our signature gold wrap and wax crown seal can be added at checkout for ₹149, and it is free on orders above ₹2,500.'],
+  ['Can I choose the delivery date for a birthday or anniversary?','Yes. Pick your preferred date in the cart and we will schedule dispatch to land on that day. For dated gifts we always aim to arrive one day early rather than one day late.'],
+  ['Do you take bulk or corporate orders?','We do. Send us the occasion, the headcount and your budget per crate on WhatsApp and we will come back the same day with a curation and a quote — including co-branded sleeves, ribbon and multi-address dispatch across NCR.'],
   ['What if something arrives damaged?','Send us a photo on WhatsApp within 48 hours of delivery and we will re-ship the affected item or the entire crate at no cost. Because everything is packed in-house, we can usually have a replacement out the same day.'],
-  ['Can I choose the delivery date for a birthday or anniversary?','Yes. Pick your preferred date in the customizer or at checkout and we will schedule dispatch to land on that day. For dated gifts we always aim to arrive one day early rather than one day late.'],
   ['Is the packaging eco-friendly?','Our crates are FSC-certified, the crinkle fill is recycled paper, and the ribbon is designed to be reused rather than binned. We do not use plastic shrink wrap anywhere in the crate.']
 ];
 
@@ -1612,7 +1398,7 @@ const IG = [5485170,6119125,14843039,30727980,20009868,9303380];
 
 /* ---------- Announce marquee ---------- */
 (function(){
-  const bits = ['Unbox Royalty. Feel the Love.','Free gold wrap above ₹2,500','Hand-packed in Ghaziabad · Shipped Pan-India','Dispatch within 24 hours','Corporate gifting from 25 crates'];
+  const bits = ['Unbox Royalty. Feel the Love.','Dispatch within 24–48 hours','Delivering across Delhi NCR'];
   const one = bits.map(b=>`<span><svg width="13" height="13" aria-hidden="true"><use href="#i-crown"/></svg> ${b}</span>`).join('');
   $('#marq').innerHTML = one + one;
 })();
@@ -1629,17 +1415,6 @@ $('#catGrid').innerHTML = CATS.map((c,i)=>`
     <span class="cat-txt"><b>${c.n} Hampers</b><span>${c.s}</span></span>
   </a>`).join('');
 
-/* ---------- Collections ---------- */
-$('#collGrid').innerHTML = COLLS.map((c,i)=>`
-  <article class="coll rv ${c.tall?'tall':''}" data-d="${i}">
-    <div class="ph"><img data-src="${PX(c.img, c.tall?800:700, c.tall?1100:700)}" alt="${c.t} luxury hamper collection" loading="lazy" decoding="async" width="800" height="1000"><span class="skel"></span></div>
-    <span class="coll-veil" aria-hidden="true"></span>
-    <div class="coll-body">
-      <h3>${c.t}</h3><p>${c.d}</p>
-      <a class="link-u" href="#occasions">Explore collection <svg width="15" height="15" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-    </div>
-  </article>`).join('');
-
 /* ---------- Reviews ---------- */
 $('#revRail').innerHTML = REVIEWS.map(r=>`
   <blockquote class="quote">
@@ -1652,16 +1427,6 @@ $$('[data-rail]').forEach(b=>b.addEventListener('click',()=>{
   const rail=$('#revRail'), d=b.dataset.rail==='next'?1:-1;
   rail.scrollBy({left:d*(rail.querySelector('.quote').offsetWidth+22),behavior:RM?'auto':'smooth'});
 }));
-
-/* ---------- Videos ---------- */
-$('#vidGrid').innerHTML = VIDS.map((v,i)=>`
-  <button class="vid rv" data-d="${i}" data-video="${v.t}">
-    <div class="ph"><img data-src="${PX(v.img,700,930)}" alt="" loading="lazy" decoding="async" width="700" height="930"><span class="skel"></span></div>
-    <span class="vid-veil" aria-hidden="true"></span>
-    <span class="play" aria-hidden="true"><svg width="22" height="22"><use href="#i-play"/></svg></span>
-    <span class="vid-cap"><b>${v.t}</b><span>${v.s}</span></span>
-    <span class="sr-only">Play video testimonial: ${v.s}</span>
-  </button>`).join('');
 
 /* ---------- Instagram ---------- */
 $('#igGrid').innerHTML = IG.map((id,i)=>`
@@ -1683,7 +1448,7 @@ function stars(r){
   return `<span class="stars"><span class="s" aria-hidden="true">★★★★★<i style="width:${pct}%">★★★★★</i></span> <span>${r.toFixed(1)}</span></span>`;
 }
 function eta(){
-  const d = new Date(Date.now() + 3*864e5);
+  const d = new Date(Date.now() + 2*864e5);
   return d.toLocaleDateString('en-IN',{weekday:'short',day:'numeric',month:'short'});
 }
 function cardHTML(p,i){
@@ -1857,7 +1622,7 @@ function quickView(id){
       <h3 id="qvTitle">${p.name}</h3>
       <div>${stars(p.rating)} <span style="font-size:.8rem;color:var(--muted-soft)">${p.reviews} reviews</span></div>
       <div class="price-row"><span class="price">${INR(p.price)}</span><span class="mrp">${INR(p.mrp)}</span>${off>0?`<span class="save">${off}% off</span>`:''}</div>
-      <p style="color:var(--muted);font-weight:300">${p.tagline}. Hand-packed in our studio, sealed with a wax crown and dispatched within 24 hours.</p>
+      <p style="color:var(--muted);font-weight:300">${p.tagline}. Hand-packed in our studio, sealed with a wax crown and dispatched within 24–48 hours.</p>
       <ul class="qv-feat">${p.items.map(i=>`<li><svg width="15" height="15" aria-hidden="true"><use href="#i-check"/></svg><span>${i}</span></li>`).join('')}</ul>
       <div class="card-meta" style="border-top:1px dashed var(--line);padding-top:14px">
         <span><i class="dot ${p.stock<=10?'low':''}" aria-hidden="true"></i>${p.stock<=10?`Only ${p.stock} left`:'In stock'}</span>
@@ -1907,7 +1672,7 @@ $('#openWish').addEventListener('click',()=>{ renderWish(); open($('#wishlist'))
 
 /* ---------- Global delegated clicks ---------- */
 document.addEventListener('click',e=>{
-  const t=e.target.closest('[data-add],[data-wish],[data-quick],[data-buy],[data-inc],[data-dec],[data-rm],[data-unwish],[data-close],[data-video]');
+  const t=e.target.closest('[data-add],[data-wish],[data-quick],[data-buy],[data-inc],[data-dec],[data-rm],[data-unwish],[data-close]');
   if(!t) return;
   if(t.dataset.add!==undefined){ addToCart(t.dataset.add); }
   else if(t.dataset.wish!==undefined){ toggleWish(t.dataset.wish,t); }
@@ -1917,7 +1682,6 @@ document.addEventListener('click',e=>{
   else if(t.dataset.dec!==undefined){ const l=cart.find(x=>x.id===t.dataset.dec); l.qty--; if(l.qty<1) cart.splice(cart.indexOf(l),1); badges(); renderCart(); }
   else if(t.dataset.rm!==undefined){ const l=cart.find(x=>x.id===t.dataset.rm); cart.splice(cart.indexOf(l),1); badges(); renderCart(); toast('Removed from your crate'); }
   else if(t.dataset.unwish!==undefined){ toggleWish(t.dataset.unwish); }
-  else if(t.dataset.video!==undefined){ toast('Video stories coming soon — follow @crowncrate_kartik for unboxings.','i-play'); }
   else if(t.hasAttribute('data-close')){ closeAll(); }
 });
 
@@ -2031,25 +1795,6 @@ if(matchMedia('(hover:hover) and (pointer:fine)').matches && !RM){
 })();
 
 /* ---------- Forms ---------- */
-$('#corpForm').addEventListener('submit',e=>{
-  e.preventDefault();
-  const name=$('#cName'), mail=$('#cEmail');
-  let bad=null;
-  [[name,v=>v.trim().length>1],[mail,v=>/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)]].forEach(([el,ok])=>{
-    const f=el.closest('.field'), good=ok(el.value);
-    f.classList.toggle('invalid',!good); if(!good && !bad) bad=el;
-  });
-  if(bad){ bad.focus(); toast('Please check the highlighted fields','i-close'); return; }
-  const btn=e.target.querySelector('button[type=submit]');
-  btn.setAttribute('aria-disabled','true'); btn.textContent='Sending…';
-  setTimeout(()=>{
-    btn.removeAttribute('aria-disabled'); btn.innerHTML='Request Sent ✓';
-    toast('Quote request received — Kartik replies within one working day.','i-check');
-    setTimeout(()=>{ btn.innerHTML='Request Quote'; e.target.reset(); },2600);
-  },900);
-});
-['#cName','#cEmail'].forEach(s=>$(s).addEventListener('blur',()=>$(s).closest('.field').classList.remove('invalid')));
-
 $('#newsForm').addEventListener('submit',e=>{
   e.preventDefault();
   const v=$('#newsEmail').value.trim(), msg=$('#newsMsg');
@@ -2064,163 +1809,7 @@ window.CC = { addToCart, toast, watchImages, watchReveal, PRODUCTS, INR };
 })();
 </script>
 
-<script>
-/* ============================================================
-   GIFT CUSTOMIZER — live SVG preview
-   ============================================================ */
-(function(){
-'use strict';
-const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
-const INR=n=>'₹'+n.toLocaleString('en-IN');
 
-const SIZES=[{k:'Petite',p:999,w:150,h:96},{k:'Signature',p:1299,w:196,h:118},{k:'Grand',p:1899,w:240,h:140}];
-const BOXES=[{k:'Kraft Ivory',c:'#EFE0C9',d:'#D9C4A4'},{k:'Champagne',c:'#E4D0A8',d:'#C9A96A'},
-             {k:'Blush Linen',c:'#EBD3C6',d:'#DDB4A0'},{k:'Espresso',c:'#6B4E32',d:'#4A3520'}];
-const RIBBONS=[{k:'Champagne Gold',c:'#C9A96A'},{k:'Rose Gold',c:'#DDB4A0'},{k:'Ivory Silk',c:'#F4EADC'},{k:'Deep Cocoa',c:'#7A5636'}];
-const ITEMS=[{k:'Soy candle',p:349},{k:'Belgian chocolates',p:449},{k:'Engraved mug',p:399},
-             {k:'Dried florals',p:299},{k:'Artisan tea tin',p:329},{k:'Body butter',p:379},{k:'Honey & nuts',p:299}];
-
-let size=1, box=1, ribbon=0, chosen=new Set([0,1,3]), wrap=true;
-
-const el=(t,a)=>{ const n=document.createElementNS('http://www.w3.org/2000/svg',t); for(const k in a) n.setAttribute(k,a[k]); return n; };
-
-function draw(){
-  const svg=$('#giftSvg'); if(!svg) return;
-  svg.innerHTML='';
-  const S=SIZES[size], B=BOXES[box], R=RIBBONS[ribbon];
-  const cx=200, baseY=300, w=S.w, h=S.h, x=cx-w/2, y=baseY-h;
-
-  const defs=el('defs');
-  defs.innerHTML=`
-    <linearGradient id="cgBox" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="${B.c}"/><stop offset="1" stop-color="${B.d}"/></linearGradient>
-    <linearGradient id="cgLid" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="${B.c}"/><stop offset=".5" stop-color="#FFF8EC" stop-opacity=".65"/><stop offset="1" stop-color="${B.d}"/></linearGradient>
-    <linearGradient id="cgRib" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="${R.c}"/><stop offset=".45" stop-color="#FFFFFF" stop-opacity=".7"/><stop offset="1" stop-color="${R.c}"/></linearGradient>
-    <radialGradient id="cgShadow"><stop offset="0" stop-color="#6B4E32" stop-opacity=".38"/><stop offset="1" stop-color="#6B4E32" stop-opacity="0"/></radialGradient>
-    <radialGradient id="cgGlow"><stop offset="0" stop-color="#FFE6A8" stop-opacity=".95"/><stop offset="1" stop-color="#FFE6A8" stop-opacity="0"/></radialGradient>`;
-  svg.appendChild(defs);
-
-  svg.appendChild(el('ellipse',{cx:cx,cy:baseY+16,rx:w*.78,ry:16,fill:'url(#cgShadow)'}));
-
-  /* contents rising out of the crate */
-  const g=el('g',{}); svg.appendChild(g);
-  const picks=[...chosen].slice(0,5);
-  const slotW = w/(picks.length+1);
-  picks.forEach((idx,i)=>{
-    const px = x + slotW*(i+1), top = y - 18 - (i%2?10:0);
-    const grp=el('g',{class:'cgItem',style:`transform-origin:${px}px ${y}px`});
-    if(idx===0){ /* candle */
-      grp.appendChild(el('rect',{x:px-13,y:top-34,width:26,height:44,rx:4,fill:'#FBF3E6',stroke:R.c,'stroke-width':1}));
-      grp.appendChild(el('rect',{x:px-13,y:top-16,width:26,height:13,fill:R.c,opacity:'.32'}));
-      grp.appendChild(el('circle',{cx:px,cy:top-42,r:14,fill:'url(#cgGlow)'}));
-      grp.appendChild(el('path',{d:`M${px} ${top-48}c5 5 3 11-0 11s-5-6 0-11Z`,fill:'#E9A23B'}));
-    } else if(idx===1){ /* chocolate box */
-      grp.appendChild(el('rect',{x:px-17,y:top-30,width:34,height:40,rx:4,fill:'#5C4028'}));
-      grp.appendChild(el('rect',{x:px-17,y:top-13,width:34,height:5,fill:R.c}));
-      grp.appendChild(el('rect',{x:px-3,y:top-30,width:6,height:40,fill:R.c,opacity:'.85'}));
-    } else if(idx===2){ /* mug */
-      grp.appendChild(el('rect',{x:px-15,y:top-28,width:30,height:38,rx:5,fill:'#FFFCF6',stroke:'#E3D3BB'}));
-      grp.appendChild(el('path',{d:`M${px+15} ${top-18}c11 0 11 16 0 16`,fill:'none',stroke:'#E3D3BB','stroke-width':3.4}));
-      grp.appendChild(el('path',{d:`M${px-7} ${top-9}q7 6 14 0`,fill:'none',stroke:R.c,'stroke-width':1.8}));
-    } else if(idx===3){ /* florals */
-      grp.appendChild(el('path',{d:`M${px} ${top+10} L${px} ${top-30}`,stroke:'#A98F62','stroke-width':2}));
-      [[-13,-34],[0,-44],[13,-34],[-7,-24],[8,-24]].forEach(([dx,dy],k)=>
-        grp.appendChild(el('circle',{cx:px+dx,cy:top+dy,r:7-k*0.4,fill:k%2?'#EBD3C6':'#F3E4CE',stroke:R.c,'stroke-width':.8})));
-    } else if(idx===4){ /* tea tin */
-      grp.appendChild(el('rect',{x:px-14,y:top-30,width:28,height:40,rx:3,fill:'#EFE3D2',stroke:'#CDB48C'}));
-      grp.appendChild(el('rect',{x:px-14,y:top-30,width:28,height:8,rx:2,fill:R.c}));
-      grp.appendChild(el('circle',{cx:px,cy:top-8,r:7,fill:'none',stroke:R.c,'stroke-width':1.2}));
-    } else if(idx===5){ /* body butter */
-      grp.appendChild(el('rect',{x:px-14,y:top-26,width:28,height:36,rx:12,fill:'#F7EFE3',stroke:'#DCC7A8'}));
-      grp.appendChild(el('rect',{x:px-10,y:top-6,width:20,height:11,rx:2,fill:R.c,opacity:'.5'}));
-    } else { /* honey & nuts */
-      grp.appendChild(el('path',{d:`M${px-14} ${top-22}q14-10 28 0v32h-28Z`,fill:'#E8C27A',stroke:'#C79A4E'}));
-      grp.appendChild(el('rect',{x:px-15,y:top-27,width:30,height:7,rx:2,fill:R.c}));
-    }
-    g.appendChild(grp);
-  });
-
-  /* crate body */
-  svg.appendChild(el('rect',{x:x,y:y,width:w,height:h,rx:8,fill:'url(#cgBox)',stroke:B.d}));
-  svg.appendChild(el('rect',{x:x,y:y,width:w,height:h,rx:8,fill:'none',stroke:'#FFFFFF',opacity:'.45'}));
-  for(let i=1;i<4;i++) svg.appendChild(el('line',{x1:x+ (w/4)*i, y1:y, x2:x+(w/4)*i, y2:y+h, stroke:B.d, opacity:'.35'}));
-  svg.appendChild(el('rect',{x:x,y:y+h*.46,width:w,height:h*.16,fill:'url(#cgRib)',opacity:'.95'}));
-  svg.appendChild(el('rect',{x:cx-w*.055,y:y,width:w*.11,height:h,fill:'url(#cgRib)',opacity:'.95'}));
-
-  /* bow */
-  const by=y+h*.54;
-  svg.appendChild(el('path',{d:`M${cx} ${by} C${cx-40} ${by-30}, ${cx-46} ${by+16}, ${cx-6} ${by+3}Z`,fill:'url(#cgRib)',stroke:R.c}));
-  svg.appendChild(el('path',{d:`M${cx} ${by} C${cx+40} ${by-30}, ${cx+46} ${by+16}, ${cx+6} ${by+3}Z`,fill:'url(#cgRib)',stroke:R.c}));
-  svg.appendChild(el('circle',{cx:cx,cy:by+1,r:7,fill:R.c}));
-
-  /* message card */
-  const note=$('#giftMsg') ? $('#giftMsg').value.trim() : '';
-  if(note){
-    const cardY=y+h+16;
-    svg.appendChild(el('rect',{x:cx-84,y:cardY,width:168,height:46,rx:5,fill:'#FFFCF6',stroke:'#E0CDAF'}));
-    const t=el('text',{x:cx,y:cardY+22,'text-anchor':'middle','font-family':'Cormorant Garamond, serif','font-size':'13','font-style':'italic',fill:'#6B4E32'});
-    const words=note.split(/\s+/); let line='',lines=[];
-    words.forEach(wd=>{ if((line+' '+wd).trim().length>30){ lines.push(line.trim()); line=wd; } else line+=' '+wd; });
-    lines.push(line.trim()); lines=lines.slice(0,2);
-    lines.forEach((l,i)=>{ const ts=el('tspan',{x:cx,dy:i?15:0}); ts.textContent=l; t.appendChild(ts); });
-    svg.appendChild(t);
-  }
-
-  /* sparkles */
-  for(let i=0;i<9;i++){
-    const sx=40+Math.random()*320, sy=40+Math.random()*180;
-    const s=el('path',{d:`M${sx} ${sy-5}l1.5 3.5L${sx+5} ${sy}l-3.5 1.5L${sx} ${sy+5}l-1.5-3.5L${sx-5} ${sy}l3.5-1.5Z`,fill:'#C9A96A',opacity:(.2+Math.random()*.5).toFixed(2)});
-    svg.appendChild(s);
-  }
-  price();
-}
-
-function price(){
-  let p = SIZES[size].p + [...chosen].reduce((n,i)=>n+ITEMS[i].p,0);
-  const sub=p;
-  if(wrap && sub<2500) p+=149;
-  $('#custPrice').textContent=INR(p);
-  $('#custPrice').dataset.value=p;
-}
-
-function chips(host,arr,get,set,labelKey='k'){
-  host.innerHTML=arr.map((o,i)=>`<button type="button" aria-pressed="${get()===i}">${o[labelKey]}${o.p?` · ${INR(o.p)}`:''}</button>`).join('');
-  $$('button',host).forEach((b,i)=>b.addEventListener('click',()=>{
-    set(i); $$('button',host).forEach((x,j)=>x.setAttribute('aria-pressed',String(j===i))); draw();
-  }));
-}
-function swatches(host,arr,get,set){
-  host.innerHTML=arr.map((o,i)=>`<button type="button" class="sw" style="background:${o.c}" aria-pressed="${get()===i}" aria-label="${o.k}" title="${o.k}"></button>`).join('');
-  $$('button',host).forEach((b,i)=>b.addEventListener('click',()=>{
-    set(i); $$('button',host).forEach((x,j)=>x.setAttribute('aria-pressed',String(j===i))); draw();
-  }));
-}
-
-chips($('#pickSize'),SIZES,()=>size,v=>size=v);
-swatches($('#pickBox'),BOXES,()=>box,v=>box=v);
-swatches($('#pickRibbon'),RIBBONS,()=>ribbon,v=>ribbon=v);
-
-$('#pickItems').innerHTML=ITEMS.map((o,i)=>
-  `<button type="button" aria-pressed="${chosen.has(i)}">${o.k} · ${INR(o.p)}</button>`).join('');
-$$('#pickItems button').forEach((b,i)=>b.addEventListener('click',()=>{
-  if(chosen.has(i)) chosen.delete(i);
-  else { if(chosen.size>=5){ window.CC.toast('Up to 5 items per crate — remove one first.'); return; } chosen.add(i); }
-  b.setAttribute('aria-pressed',String(chosen.has(i))); draw();
-}));
-
-$('#giftMsg').addEventListener('input',e=>{ $('#msgCount').textContent=e.target.value.length; draw(); });
-$('#giftWrap').addEventListener('change',e=>{ wrap=e.target.checked; price(); });
-const gd=$('#giftDate'); gd.min=new Date(Date.now()+864e5).toISOString().slice(0,10);
-$('#custAdd').addEventListener('click',()=>{
-  const p=+$('#custPrice').dataset.value;
-  window.CC.addToCart(null,1,{ id:'custom-'+Date.now(), name:`Custom ${SIZES[size].k} Crate`, price:p,
-    img:19791015, occ:`${BOXES[box].k} · ${RIBBONS[ribbon].k}` });
-});
-draw();
-})();
-</script>
 
 <!-- ============================================================
      3D HERO — Three.js
@@ -2515,8 +2104,9 @@ function build(){
 
   const lerp=(a,b,t)=>a+(b-a)*t;
   const clock=new THREE.Clock();
-  let raf;
+  let raf=0, running=false;
   function frame(){
+    if(!running) return;
     raf=requestAnimationFrame(frame);
     if(!visible){ return; }
     const t=clock.getElapsedTime();
@@ -2549,8 +2139,8 @@ function build(){
 
     /* camera pushes in gently */
     camera.position.z = lerp(camera.position.z, baseZ - e*1.35, .06);
-    camera.position.y = 2.55 + e*0.55;
-    camera.lookAt(root.position.x*0.4, lookY + e*0.3, 0);
+    camera.position.y = 2.55 + e*0.18;
+    camera.lookAt(root.position.x*0.4, lookY + e*0.58, 0);
 
     /* particles */
     const a=pg.attributes.position.array;
@@ -2573,10 +2163,11 @@ function build(){
 
     renderer.render(scene,camera);
   }
-  frame();
+  running=true; frame();
 
   document.addEventListener('visibilitychange',()=>{
-    if(document.hidden){ cancelAnimationFrame(raf); } else { frame(); }
+    if(document.hidden){ running=false; cancelAnimationFrame(raf); }
+    else if(!running){ running=true; frame(); }
   });
 
   clearTimeout(hardStop);
