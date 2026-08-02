@@ -75,7 +75,9 @@
 }
 
 *,*::before,*::after{ box-sizing:border-box; margin:0; padding:0; }
-html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth; scroll-padding-top:calc(var(--nav-h) + 24px); }
+html{ -webkit-text-size-adjust:100%; text-size-adjust:100%; scroll-behavior:smooth;
+  scroll-padding-top:calc(var(--nav-h) + 24px);
+  -webkit-tap-highlight-color:rgba(201,169,106,.18); }
 body{
   background:var(--cream);
   color:var(--ink);
@@ -367,8 +369,9 @@ h1,h2,h3,h4{ font-family:'Marcellus',Georgia,serif; font-weight:400; letter-spac
 /* ============================================================
    HERO — 3D
    ============================================================ */
-.hero{ position:relative; height:185svh; }
-.hero-stick{ position:sticky; top:0; height:100svh; min-height:600px; display:flex; align-items:center; overflow:clip; }
+.hero{ position:relative; height:185vh; height:185svh; }
+.hero-stick{ position:sticky; top:0; height:100vh; height:100svh; min-height:560px;
+  display:flex; align-items:center; overflow:clip; }
 .no-webgl .hero, html.rm .hero{ height:auto; }
 .no-webgl .hero-stick, html.rm .hero-stick{ position:static; height:auto; min-height:88svh; padding:clamp(40px,6vw,80px) 0; }
 .hero-bg{ position:absolute; inset:0; background:
@@ -784,6 +787,51 @@ footer.site li a:hover{ color:var(--gold-text); padding-left:5px }
 @keyframes toastOut{ to{ opacity:0; transform:translateY(10px) scale(.97) } }
 
 /* ============================================================
+   TOUCH — iPad, Android tablets & phones
+   ============================================================ */
+@media (hover:none),(pointer:coarse){
+  /* card actions are hover-revealed on pointer devices — always show on touch */
+  .card-hover{ opacity:1; transform:none; }
+  .qbtn{ background:rgba(255,253,250,.96); }
+  .card:hover{ transform:none; }
+  .cat:hover,.coll:hover,.why:hover,.quote:hover{ transform:none; }
+  .card:active{ transform:scale(.985); }
+  .cat:active,.ig:active{ transform:scale(.99); }
+
+  /* comfortable hit areas */
+  .qty button{ width:44px; height:44px; }
+  footer.site li a{ min-height:40px; padding-block:8px; }
+  .mega a{ min-height:52px; align-content:center; }
+  input[type=range]{ height:5px; padding-block:16px; background-clip:content-box; }
+  input[type=range]::-webkit-slider-thumb{ width:28px; height:28px; }
+  input[type=range]::-moz-range-thumb{ width:28px; height:28px; }
+  .link-u::after{ transform:scaleX(1); }
+
+  /* no fixed-attachment / heavy blend costs on mobile GPUs */
+  .grain{ opacity:.2; }
+}
+
+/* keyboard-zoom guard: iOS zooms any input under 16px */
+input,select,textarea{ font-size:16px; }
+
+/* safe areas — notches, Dynamic Island, Android gesture bar */
+#top{ right:calc(22px + env(safe-area-inset-right)); bottom:calc(22px + env(safe-area-inset-bottom)); }
+#toasts{ bottom:calc(26px + env(safe-area-inset-bottom)); }
+.drawer{ padding-right:env(safe-area-inset-right); overscroll-behavior:contain; }
+.drawer-body{ overscroll-behavior:contain; -webkit-overflow-scrolling:touch; }
+#mobnav{ padding-bottom:calc(60px + env(safe-area-inset-bottom)); overscroll-behavior:contain; }
+.wrap{ padding-left:max(var(--gut), env(safe-area-inset-left)); padding-right:max(var(--gut), env(safe-area-inset-right)); }
+
+/* tablet: keep hero copy legible over the 3D scene */
+@media (max-width:1100px){
+  .hero-copy{ position:relative; z-index:3; }
+  .hero-copy::before{
+    content:''; position:absolute; inset:-26px -22px -18px; z-index:-1; border-radius:36px;
+    background:radial-gradient(120% 92% at 26% 42%, rgba(251,246,239,.95), rgba(251,246,239,.72) 54%, rgba(251,246,239,0) 90%);
+  }
+}
+
+/* ============================================================
    RESPONSIVE
    ============================================================ */
 @media (max-width:1240px){
@@ -805,7 +853,7 @@ footer.site li a:hover{ color:var(--gold-text); padding-left:5px }
   .stats{ grid-template-columns:repeat(2,1fr) }
   .foot-grid{ grid-template-columns:1fr 1fr }}
 @media (max-width:900px){
-  .hero{ height:172svh }
+  .hero{ height:172vh; height:172svh }
   .hero-stick{ align-items:flex-start }
   .hero-in{ padding-top:7vh }
   .hero-copy{ position:relative; z-index:3 }
@@ -826,6 +874,50 @@ footer.site li a:hover{ color:var(--gold-text); padding-left:5px }
   .range-wrap{ margin-left:0; width:100% }
   .btn{ padding:0 22px; font-size:.76rem }
   .announce{ font-size:.66rem }
+}
+/* --- iPad & Android tablets --- */
+@media (min-width:641px) and (max-width:1180px){
+  :root{ --maxw:960px }
+  .trust-in{ grid-template-columns:repeat(3,1fr) }
+  .prod-grid{ grid-template-columns:repeat(2,1fr) }
+  .cat-grid{ grid-template-columns:repeat(3,1fr) }
+  .ig-grid{ grid-template-columns:repeat(3,1fr) }
+  .stats{ grid-template-columns:repeat(2,1fr) }
+  .frame{ aspect-ratio:16/11; max-width:760px; margin-inline:auto }
+  .section-head{ max-width:100% }
+  .quote{ flex-basis:min(380px,78vw) }
+  .corp-card{ max-width:640px }
+  .foot-grid{ grid-template-columns:1fr 1fr }
+}
+/* --- iPad / tablet landscape: hero copy vs 3D crate --- */
+@media (min-width:901px) and (max-width:1180px){
+  .hero-in{ padding-top:0 }
+  .hero-copy{ max-width:min(520px,58%) }
+}
+/* --- phones: logo badge already carries the wordmark --- */
+@media (max-width:430px){
+  .brand-txt{ display:none }
+  .brand img{ width:46px; height:46px }
+  .nav-tools{ gap:2px }
+}
+/* --- small Android phones --- */
+@media (max-width:400px){
+  :root{ --gut:18px }
+  .nav-tools .icon-btn:nth-child(2){ display:none }   /* account: reachable in footer */
+  .h-xl{ font-size:clamp(2.15rem,10.5vw,2.9rem) }
+  .hero-marks{ gap:20px }
+  .hero-marks div b{ font-size:1.42rem }
+  .ig-grid{ grid-template-columns:repeat(2,1fr) }
+  .drawer-head h2{ font-size:1.05rem }
+  .line-item{ grid-template-columns:60px 1fr auto; gap:10px }
+  .line-item .ph{ width:60px; height:60px }
+}
+/* --- short landscape phones: don't lock a tall sticky hero --- */
+@media (max-height:520px) and (orientation:landscape){
+  .hero{ height:auto }
+  .hero-stick{ position:static; height:auto; min-height:0; padding:48px 0 64px }
+  .hero-scroll{ display:none }
+  #scene{ opacity:.5 }
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{ animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; scroll-behavior:auto !important }
@@ -1868,13 +1960,16 @@ document.head.appendChild(s);
 function build(){
   const THREE=window.THREE;
   const host=document.getElementById('scene');
-  const renderer=new THREE.WebGLRenderer({antialias:true,alpha:true,powerPreference:'high-performance'});
-  renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+  /* device tiers — phones get the lightest scene, tablets a middle one */
+  const PHONE  = innerWidth < 700 || (matchMedia('(pointer:coarse)').matches && Math.min(innerWidth,innerHeight) < 620);
+  const TABLET = !PHONE && innerWidth <= 1180;
+  const renderer=new THREE.WebGLRenderer({antialias:!PHONE,alpha:true,powerPreference:'high-performance'});
+  renderer.setPixelRatio(Math.min(devicePixelRatio, PHONE?1.5:(TABLET?1.75:2)));
   renderer.setSize(host.clientWidth,host.clientHeight);
   renderer.outputEncoding=THREE.sRGBEncoding;
   renderer.toneMapping=THREE.ACESFilmicToneMapping;
   renderer.toneMappingExposure=1.02;
-  renderer.shadowMap.enabled=true;
+  renderer.shadowMap.enabled=!PHONE;
   renderer.shadowMap.type=THREE.PCFSoftShadowMap;
   host.appendChild(renderer.domElement);
   target=Math.max(target,46);
@@ -1897,7 +1992,7 @@ function build(){
 
   scene.add(new THREE.HemisphereLight(0xFFF2DF,0xD9BE97,.5));
   const key=new THREE.DirectionalLight(0xFFEFD6,1.35); key.position.set(4.5,7,5);
-  key.castShadow=true; key.shadow.mapSize.set(1024,1024);
+  key.castShadow=!PHONE; key.shadow.mapSize.set(TABLET?768:1024, TABLET?768:1024);
   key.shadow.camera.near=1; key.shadow.camera.far=22;
   key.shadow.camera.left=-5; key.shadow.camera.right=5;
   key.shadow.camera.top=5;   key.shadow.camera.bottom=-5;
@@ -2150,7 +2245,7 @@ function build(){
   hamper.traverse(o=>{ if(o.isMesh){ o.castShadow=true; o.receiveShadow=true; } });
 
   /* sparkle particles */
-  const COUNT = innerWidth<760 ? 320 : 720;
+  const COUNT = PHONE ? 240 : (TABLET ? 420 : 720);
   const pos=new Float32Array(COUNT*3), seed=new Float32Array(COUNT);
   for(let i=0;i<COUNT;i++){
     pos[i*3]=(Math.random()-.5)*11; pos[i*3+1]=Math.random()*6-.6; pos[i*3+2]=(Math.random()-.5)*7;
@@ -2170,7 +2265,7 @@ function build(){
   /* floating petals */
   const petals=new THREE.Group(); scene.add(petals);
   const petalGeo=new THREE.CircleGeometry(.12,10);
-  for(let i=0;i<22;i++){
+  for(let i=0,PN=PHONE?9:(TABLET?15:22); i<PN; i++){
     const p=new THREE.Mesh(petalGeo, new THREE.MeshStandardMaterial({
       color:i%2?0xE9C3AF:0xF2DEC4, roughness:.75, metalness:0, side:THREE.DoubleSide, transparent:true, opacity:.92}));
     p.scale.set(1,.62,1);
@@ -2186,6 +2281,11 @@ function build(){
   const heroEl=document.querySelector('.hero');
   const copyEl=document.querySelector('.hero-in'), cueEl=document.querySelector('.hero-scroll');
   function onScroll(){
+    /* short landscape phones drop the pinned hero — keep the copy fully visible there */
+    if(getComputedStyle(document.querySelector('.hero-stick')).position!=='sticky'){
+      scrollP=0; copyEl.style.opacity=''; copyEl.style.transform=''; copyEl.style.pointerEvents='';
+      cueEl.style.opacity=''; return;
+    }
     const run=Math.max(1, heroEl.offsetHeight - innerHeight);
     scrollP=Math.min(1,Math.max(0,(scrollY - heroEl.offsetTop)/run));
     const fade=Math.max(0,1-scrollP*2.15);
