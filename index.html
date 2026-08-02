@@ -1023,8 +1023,8 @@ footer.site li a:hover{ color:var(--gold-text); padding-left:5px }
       <div class="filters" style="margin:0" id="occFilters" role="group" aria-label="Filter by occasion"></div>
       <div class="range-wrap">
         <label for="priceMax">Max budget</label>
-        <input type="range" id="priceMax" min="500" max="6000" step="100" value="6000" aria-describedby="priceOut">
-        <output id="priceOut" for="priceMax">₹6,000</output>
+        <input type="range" id="priceMax" min="500" max="2000" step="50" value="2000" aria-describedby="priceOut">
+        <output id="priceOut" for="priceMax">₹2,000</output>
       </div>
     </div>
 
@@ -1345,34 +1345,34 @@ const P = (id,name,occ,tagline,price,mrp,rating,reviews,img,stock,items,tag)=>
   ({id,name,occ,tagline,price,mrp,rating,reviews,img,stock,items,tag});
 
 const PRODUCTS = [
-  P('cc01','Blush Romance Hamper','Anniversary','For your special someone',1999,2499,4.6,128,4271686,12,
+  P('cc01','Blush Romance Hamper','Anniversary','For your special someone',1249,1599,4.6,128,4271686,12,
     ['Rose-gold soy candle','Belgian truffle box','Engraved ceramic mug','Dried floral posy','Handwritten note'],'best'),
-  P('cc02','Luxury Indulgence Hamper','Luxury','A touch of pure luxury',2799,3499,4.8,97,6204569,7,
+  P('cc02','Luxury Indulgence Hamper','Luxury','A touch of pure luxury',1949,2399,4.8,97,6204569,7,
     ['Single-origin dark chocolate','Saffron honey jar','Amber & oud candle','Gold-rim glassware pair','Silk-wrapped keepsake box'],'best'),
-  P('cc03','Celebrate You Hamper','Birthday','Because you deserve it',1799,2199,4.5,156,5485173,20,
+  P('cc03','Celebrate You Hamper','Birthday','Because you deserve it',899,1199,4.5,156,5485173,20,
     ['Birthday candle set','Cocoa dusted almonds','Personalised name mug','Confetti card & sparkler','Gold ribbon wrap'],'new'),
-  P('cc04','Festive Delight Hamper','Festival','Spread joy this festive season',2299,2899,4.7,88,8467583,15,
+  P('cc04','Festive Delight Hamper','Festival','Spread joy this festive season',1349,1699,4.7,88,8467583,15,
     ['Assorted dry-fruit tin','Kesar-pista bites','Brass diya pair','Rangoli card set','Festive foil wrap'],'best'),
-  P('cc05','Corporate Excellence Hamper','Corporate','The perfect corporate gift',3499,3999,4.7,64,14843039,40,
+  P('cc05','Corporate Excellence Hamper','Corporate','The perfect corporate gift',1149,1449,4.7,64,14843039,40,
     ['Leather desk journal','Artisan coffee sampler','Co-branded ceramic mug','Almond & fig bar','Custom insert card'],''),
-  P('cc06','Eternal Vows Hamper','Wedding','For the beginning of forever',4299,4999,4.9,73,20009868,9,
+  P('cc06','Eternal Vows Hamper','Wedding','For the beginning of forever',1849,2249,4.9,73,20009868,9,
     ['Champagne flute pair','Rose & oud candle','Silk-bound photo album','Praline collection','Monogrammed ribbon'],'best'),
-  P('cc07','Tiny Crown Baby Hamper','Baby','Welcome the little one',1899,2299,4.8,61,842876,18,
+  P('cc07','Tiny Crown Baby Hamper','Baby','Welcome the little one',1049,1349,4.8,61,842876,18,
     ['Organic cotton romper','Wooden rattle','Baby balm & oil duo','Milestone card set','Name-embroidered blanket'],'new'),
-  P('cc08','Cocoa Noir Hamper','Chocolate','Seventy percent happiness',1599,1899,4.6,142,28769885,25,
+  P('cc08','Cocoa Noir Hamper','Chocolate','Seventy percent happiness',549,749,4.6,142,28769885,25,
     ['70% single-origin bar','Sea-salt caramels','Hot chocolate stirrers','Cocoa nib brittle','Kraft & gold box'],''),
-  P('cc09','Serene Ritual Hamper','Self Care','Slow evenings, bottled',2199,2699,4.7,109,17555293,11,
+  P('cc09','Serene Ritual Hamper','Self Care','Slow evenings, bottled',1449,1799,4.7,109,17555293,11,
     ['Lavender bath salts','Shea body butter','Ceramic oil burner','Chamomile tea tin','Linen eye pillow'],''),
-  P('cc10','Monogram Muse Hamper','Personalised','Their name, your words',2599,3199,4.9,52,9303380,6,
+  P('cc10','Monogram Muse Hamper','Personalised','Their name, your words',1599,1949,4.9,52,9303380,6,
     ['Gold-foil monogram lid','Engraved brass bookmark','Custom scented candle','Calligraphed cotton card','Initialled silk ribbon'],'new')
 ];
 
 const CATS = [
-  {n:'Birthday',   s:'From ₹1,499', img:5485170},
-  {n:'Wedding',    s:'From ₹3,299', img:36245500},
-  {n:'Corporate',  s:'From ₹1,999', img:7502805},
-  {n:'Festival',   s:'From ₹1,799', img:30727980},
-  {n:'Self Care',  s:'From ₹1,299', img:6119125}
+  {n:'Birthday',   s:'From ₹899', img:5485170},
+  {n:'Wedding',    s:'From ₹1,849', img:36245500},
+  {n:'Corporate',  s:'From ₹1,149', img:7502805},
+  {n:'Festival',   s:'From ₹1,349', img:30727980},
+  {n:'Self Care',  s:'From ₹1,449', img:6119125}
 ];
 
 const REVIEWS = [
@@ -1387,7 +1387,7 @@ const REVIEWS = [
 const FAQS = [
   ['How fast do you dispatch and deliver?','Every crate is hand-packed and dispatched within 24–48 hours of order confirmation. Same-day delivery is available in Ghaziabad, Noida and East Delhi if you order before 1pm, and the rest of Delhi NCR usually receives within 1–2 days.'],
   ['Which areas do you deliver to?','We deliver across Delhi NCR — Ghaziabad, Noida, Greater Noida, Delhi, Faridabad and Gurugram. If you are just outside that ring, message us on WhatsApp and we will tell you honestly whether we can reach you well.'],
-  ['Can I add a gift note or gift wrap?','Yes. Every order includes a free handwritten note, calligraphed on cotton card and sealed in wax. Our signature gold wrap and wax crown seal can be added at checkout for ₹149, and it is free on orders above ₹2,500.'],
+  ['Can I add a gift note or gift wrap?','Yes. Every order includes a free handwritten note, calligraphed on cotton card and sealed in wax. Our signature gold wrap and wax crown seal can be added at checkout for ₹149, and it is free on orders above ₹1,999.'],
   ['Can I choose the delivery date for a birthday or anniversary?','Yes. Pick your preferred date in the cart and we will schedule dispatch to land on that day. For dated gifts we always aim to arrive one day early rather than one day late.'],
   ['Do you take bulk or corporate orders?','We do. Send us the occasion, the headcount and your budget per crate on WhatsApp and we will come back the same day with a curation and a quote — including co-branded sleeves, ribbon and multi-address dispatch across NCR.'],
   ['What if something arrives damaged?','Send us a photo on WhatsApp within 48 hours of delivery and we will re-ship the affected item or the entire crate at no cost. Because everything is packed in-house, we can usually have a replacement out the same day.'],
@@ -1493,7 +1493,7 @@ $('#bestGrid').innerHTML  = PRODUCTS.filter(p=>['cc01','cc02','cc03','cc04','cc0
 $('#occGrid').innerHTML   = PRODUCTS.map(cardHTML).join('');
 
 /* ---------- Filters ---------- */
-let occFilter='All', maxPrice=6000;
+let occFilter='All', maxPrice=2000;
 $('#occFilters').innerHTML = ['All',...OCCASIONS.map(o=>o.k)]
   .map(k=>`<button class="chip" data-occ-filter="${k}" aria-pressed="${k==='All'}">${k}</button>`).join('');
 function applyFilters(){
@@ -1562,10 +1562,10 @@ function renderCart(){
       <div style="text-align:right"><b style="font-family:'Cormorant Garamond',serif;font-size:1.15rem">${INR(l.price*l.qty)}</b><br>
         <button class="rm" data-rm="${l.id}">Remove</button></div>
     </div>`).join('');
-  const wrapFee = (giftWrapOn && subtotal()<2500) ? 149 : 0;
+  const wrapFee = (giftWrapOn && subtotal()<1999) ? 149 : 0;
   body.insertAdjacentHTML('beforeend',`
     <label class="giftopt"><input type="checkbox" id="cartWrap" ${giftWrapOn?'checked':''}>
-      <span><b>Signature gold wrap &amp; wax seal</b><br>${subtotal()>=2500?'Included free on this order.':'₹149 · free above ₹2,500'}</span></label>
+      <span><b>Signature gold wrap &amp; wax seal</b><br>${subtotal()>=1999?'Included free on this order.':'₹149 · free above ₹1,999'}</span></label>
     <div class="field"><label for="cartNote">Gift message</label>
       <textarea id="cartNote" maxlength="140" placeholder="Write the note we'll calligraph…">${giftNote}</textarea></div>
     <div class="field"><label for="cartDate">Preferred delivery date</label><input type="date" id="cartDate" value="${giftDate}"></div>`);
@@ -1686,7 +1686,7 @@ document.addEventListener('click',e=>{
 });
 
 /* ---------- Search ---------- */
-const SUGS=['Birthday','Wedding','Under ₹2,000','Corporate','Chocolate','Personalised'];
+const SUGS=['Birthday','Wedding','Under ₹1,000','Corporate','Chocolate','Personalised'];
 $('#searchSug').innerHTML=SUGS.map(s=>`<button class="chip" data-sug="${s}">${s}</button>`).join('');
 function runSearch(q){
   q=q.trim().toLowerCase();
@@ -1874,6 +1874,8 @@ function build(){
   renderer.outputEncoding=THREE.sRGBEncoding;
   renderer.toneMapping=THREE.ACESFilmicToneMapping;
   renderer.toneMappingExposure=1.02;
+  renderer.shadowMap.enabled=true;
+  renderer.shadowMap.type=THREE.PCFSoftShadowMap;
   host.appendChild(renderer.domElement);
   target=Math.max(target,46);
 
@@ -1894,7 +1896,13 @@ function build(){
   })();
 
   scene.add(new THREE.HemisphereLight(0xFFF2DF,0xD9BE97,.5));
-  const key=new THREE.DirectionalLight(0xFFEFD6,1.35); key.position.set(4.5,7,5); scene.add(key);
+  const key=new THREE.DirectionalLight(0xFFEFD6,1.35); key.position.set(4.5,7,5);
+  key.castShadow=true; key.shadow.mapSize.set(1024,1024);
+  key.shadow.camera.near=1; key.shadow.camera.far=22;
+  key.shadow.camera.left=-5; key.shadow.camera.right=5;
+  key.shadow.camera.top=5;   key.shadow.camera.bottom=-5;
+  key.shadow.bias=-0.0012; key.shadow.radius=6;
+  scene.add(key);
   const rim=new THREE.DirectionalLight(0xC9A472,1.05); rim.position.set(-5.5,3.2,-4.5); scene.add(rim);
   const rose=new THREE.PointLight(0xE0A48B,5,12,2); rose.position.set(-2.6,1.8,2.8); scene.add(rose);
   const gold=new THREE.PointLight(0xE0B876,4.5,12,2); gold.position.set(2.8,2.6,2.4); scene.add(gold);
@@ -1951,57 +1959,153 @@ function build(){
   const plateIn=new THREE.Mesh(new THREE.CylinderGeometry(.085,.085,.036,26), MAT(0x5A3F26,.6,.1));
   plateIn.rotation.x=Math.PI/2; plateIn.position.set(0,H*.52,D/2+.015); hamper.add(plateIn);
 
-  /* crinkle fill */
+  /* ---- product palette: warm, saturated, still on-brand ---- */
+  const CERAMIC = MAT(0xFAF3E6,.42,.04),
+        ROSEGOLD= MAT(0xC98A76,.28,.85),
+        BLUSH   = MAT(0xD98C7A,.5,.06),
+        WINE    = MAT(0x8E3B3B,.45,.08),
+        TERRA   = MAT(0xC4693F,.55,.05),
+        AMBER   = MAT(0xC98A2E,.16,.28),
+        HONEY   = MAT(0xD9A03C,.2,.15),
+        COCOA_D = MAT(0x452B18,.62,.06),
+        MILK    = MAT(0x8A5533,.6,.05),
+        SAGE    = MAT(0x76875C,.78,0),
+        FOREST  = MAT(0x2E4636,.5,.12),
+        PISTA   = MAT(0xA9BC86,.6,.04),
+        CARAMEL = MAT(0xC59A5E,.55,.05),
+        PETALC  = MAT(0xF6E3D2,.72,0);
+  [CERAMIC,ROSEGOLD,BLUSH,WINE,TERRA,AMBER,HONEY,COCOA_D,MILK,SAGE,FOREST,PISTA,CARAMEL,PETALC]
+    .forEach(m=>m.envMapIntensity=.55);
+
+  /* crinkle fill — cream, blush and pale gold shred */
+  const FILLM=[IVORY,CREAM2,PETALC,MAT(0xE9C7B4,.85,0),MAT(0xE3CFA6,.85,0)];
   const fill=new THREE.Group(); hamper.add(fill);
-  for(let i=0;i<80;i++){
-    const p=new THREE.Mesh(new THREE.BoxGeometry(.13,.03,.05), i%3?IVORY:CREAM2);
-    p.position.set((Math.random()-.5)*(W-.4), H-.3+Math.random()*.16, (Math.random()-.5)*(D-.36));
+  for(let i=0;i<110;i++){
+    const p=new THREE.Mesh(new THREE.BoxGeometry(.12,.028,.045), FILLM[i%FILLM.length]);
+    p.position.set((Math.random()-.5)*(W-.34), H-.32+Math.random()*.18, (Math.random()-.5)*(D-.3));
     p.rotation.set(Math.random(),Math.random()*3.14,Math.random());
-    fill.add(p);
+    p.castShadow=true; fill.add(p);
   }
 
   /* contents (rise on scroll) */
   const goods=new THREE.Group(); goods.position.y=.14; hamper.add(goods);
+
   function candle(x,z){
     const g=new THREE.Group();
-    const jar=new THREE.Mesh(new THREE.CylinderGeometry(.22,.2,.42,28), IVORY); jar.position.y=.21; g.add(jar);
-    const band=new THREE.Mesh(new THREE.CylinderGeometry(.222,.222,.12,28), GOLD); band.position.y=.13; g.add(band);
-    const wax=new THREE.Mesh(new THREE.CylinderGeometry(.19,.19,.03,24), MAT(0xF7EBD6,.9,0)); wax.position.y=.42; g.add(wax);
-    const flame=new THREE.Mesh(new THREE.SphereGeometry(.045,12,12), new THREE.MeshBasicMaterial({color:0xFFD08A}));
-    flame.position.y=.5; flame.scale.y=1.9; g.add(flame); g.userData.flame=flame;
-    const glow=new THREE.PointLight(0xFFC98A,2.2,1.6,2); glow.position.y=.55; g.add(glow);
+    const jar=new THREE.Mesh(new THREE.CylinderGeometry(.215,.2,.4,32), CERAMIC); jar.position.y=.2; g.add(jar);
+    const label=new THREE.Mesh(new THREE.CylinderGeometry(.218,.218,.15,32), BLUSH); label.position.y=.16; g.add(label);
+    const band=new THREE.Mesh(new THREE.CylinderGeometry(.222,.222,.022,32), ROSEGOLD); band.position.y=.235; g.add(band);
+    const band2=band.clone(); band2.position.y=.085; g.add(band2);
+    const wax=new THREE.Mesh(new THREE.CylinderGeometry(.192,.192,.05,28), MAT(0xF3E3C9,.95,0)); wax.position.y=.385; g.add(wax);
+    const wick=new THREE.Mesh(new THREE.CylinderGeometry(.008,.008,.05,6), COCOA_D); wick.position.y=.425; g.add(wick);
+    const flame=new THREE.Mesh(new THREE.SphereGeometry(.042,14,14), new THREE.MeshBasicMaterial({color:0xFFC46B}));
+    flame.position.y=.475; flame.scale.y=2.1; g.add(flame); g.userData.flame=flame;
+    const glow=new THREE.PointLight(0xFFB661,2.6,1.7,2); glow.position.set(0,.52,0); g.add(glow);
+    const lid=new THREE.Mesh(new THREE.CylinderGeometry(.225,.225,.05,32), ROSEGOLD);
+    lid.position.set(.3,.03,.16); lid.rotation.z=Math.PI/2.2; g.add(lid);
     g.position.set(x,0,z); return g;
   }
-  function jarNuts(x,z){
+
+  function honeyJar(x,z){
     const g=new THREE.Group();
-    const j=new THREE.Mesh(new THREE.CylinderGeometry(.2,.19,.44,26), GLASSY); j.position.y=.22; g.add(j);
-    const lid=new THREE.Mesh(new THREE.CylinderGeometry(.205,.205,.08,26), GOLD); lid.position.y=.46; g.add(lid);
-    const lbl=new THREE.Mesh(new THREE.CylinderGeometry(.202,.202,.16,26), IVORY); lbl.position.y=.2; g.add(lbl);
+    const j=new THREE.Mesh(new THREE.CylinderGeometry(.185,.175,.4,30), AMBER); j.position.y=.2; g.add(j);
+    const neck=new THREE.Mesh(new THREE.CylinderGeometry(.135,.175,.08,30), AMBER); neck.position.y=.43; g.add(neck);
+    const lid=new THREE.Mesh(new THREE.CylinderGeometry(.15,.15,.075,30), GOLD); lid.position.y=.5; g.add(lid);
+    const knurl=new THREE.Mesh(new THREE.TorusGeometry(.148,.012,8,30), GOLD);
+    knurl.rotation.x=Math.PI/2; knurl.position.y=.5; g.add(knurl);
+    const lbl=new THREE.Mesh(new THREE.CylinderGeometry(.188,.188,.15,30), MAT(0xFBF3E4,.85,0)); lbl.position.y=.19; g.add(lbl);
+    const stripe=new THREE.Mesh(new THREE.CylinderGeometry(.19,.19,.02,30), HONEY); stripe.position.y=.115; g.add(stripe);
     g.position.set(x,0,z); return g;
   }
+
   function mug(x,z){
     const g=new THREE.Group();
-    const m=new THREE.Mesh(new THREE.CylinderGeometry(.21,.185,.42,26), IVORY); m.position.y=.21; g.add(m);
-    const hd=new THREE.Mesh(new THREE.TorusGeometry(.12,.028,10,22), IVORY);
-    hd.position.set(.24,.24,0); hd.rotation.y=Math.PI/2; g.add(hd);
+    const m=new THREE.Mesh(new THREE.CylinderGeometry(.205,.18,.4,30), CERAMIC); m.position.y=.2; g.add(m);
+    const rim=new THREE.Mesh(new THREE.TorusGeometry(.203,.014,10,30), ROSEGOLD);
+    rim.rotation.x=Math.PI/2; rim.position.y=.4; g.add(rim);
+    const brew=new THREE.Mesh(new THREE.CylinderGeometry(.19,.19,.02,26), MAT(0x4A2E1B,.35,.05)); brew.position.y=.36; g.add(brew);
+    const hd=new THREE.Mesh(new THREE.TorusGeometry(.115,.026,12,26,Math.PI*1.35), CERAMIC);
+    hd.position.set(.225,.22,0); hd.rotation.set(0,Math.PI/2,-.35); g.add(hd);
+    const heart=new THREE.Mesh(new THREE.CylinderGeometry(.045,.045,.012,20), BLUSH);
+    heart.rotation.x=Math.PI/2; heart.position.set(0,.22,.202); g.add(heart);
     g.position.set(x,0,z); return g;
   }
-  function choc(x,z){
+
+  function chocBox(x,z){
     const g=new THREE.Group();
-    const b=new THREE.Mesh(new THREE.BoxGeometry(.5,.34,.34), COCOA); b.position.y=.17; g.add(b);
-    const r1=new THREE.Mesh(new THREE.BoxGeometry(.52,.36,.06), GOLD); r1.position.y=.17; g.add(r1);
-    g.position.set(x,0,z); return g;
-  }
-  function bouquet(x,z){
-    const g=new THREE.Group();
-    const st=new THREE.Mesh(new THREE.CylinderGeometry(.02,.03,.5,8), MAT(0xA98F62,.9,0)); st.position.y=.25; g.add(st);
-    for(let i=0;i<9;i++){
-      const f=new THREE.Mesh(new THREE.SphereGeometry(.06+Math.random()*.03,10,10), i%2?ROSE:MAT(0xF3E4CE,.85,0));
-      f.position.set((Math.random()-.5)*.3,.45+Math.random()*.24,(Math.random()-.5)*.3); g.add(f);
+    const b=new THREE.Mesh(new THREE.BoxGeometry(.52,.2,.36), COCOA_D); b.position.y=.1; g.add(b);
+    const inner=new THREE.Mesh(new THREE.BoxGeometry(.46,.06,.3), MAT(0x6B4224,.8,0)); inner.position.y=.2; g.add(inner);
+    for(let i=0;i<6;i++){
+      const t=new THREE.Mesh(new THREE.SphereGeometry(.055,14,12), i%3===0?MILK:(i%3===1?MAT(0x2E1B0F,.5,.05):CARAMEL));
+      t.scale.y=.72; t.position.set(-.16+(i%3)*.16,.245,-.07+Math.floor(i/3)*.14); g.add(t);
     }
+    const lid=new THREE.Mesh(new THREE.BoxGeometry(.55,.055,.39), WINE);
+    lid.position.set(.06,.34,-.16); lid.rotation.x=-.42; g.add(lid);
+    const rb=new THREE.Mesh(new THREE.BoxGeometry(.09,.06,.4), GOLD); rb.position.set(.06,.35,-.16); rb.rotation.x=-.42; g.add(rb);
     g.position.set(x,0,z); return g;
   }
-  goods.add(candle(-.78,.16), jarNuts(-.2,-.2), mug(.42,.2), choc(1.0,-.14), bouquet(-1.0,-.3));
+
+  function posy(x,z){
+    const g=new THREE.Group();
+    const wrapCone=new THREE.Mesh(new THREE.ConeGeometry(.15,.34,16,1,true), MAT(0xF2E2CE,.8,0));
+    wrapCone.position.y=.17; wrapCone.rotation.x=Math.PI; g.add(wrapCone);
+    const tie=new THREE.Mesh(new THREE.TorusGeometry(.07,.016,8,20), ROSEGOLD);
+    tie.rotation.x=Math.PI/2; tie.position.y=.09; g.add(tie);
+    for(let i=0;i<5;i++){
+      const a=i/5*6.28;
+      const st=new THREE.Mesh(new THREE.CylinderGeometry(.011,.014,.44,6), SAGE);
+      st.position.set(Math.cos(a)*.05,.34,Math.sin(a)*.05); st.rotation.z=Math.cos(a)*.16; st.rotation.x=Math.sin(a)*.16; g.add(st);
+      const leaf=new THREE.Mesh(new THREE.SphereGeometry(.07,10,8), SAGE);
+      leaf.scale.set(1,.28,.55); leaf.position.set(Math.cos(a)*.16,.4+i*.02,Math.sin(a)*.16);
+      leaf.rotation.set(0,-a,.5); g.add(leaf);
+    }
+    const blooms=[[0,.62,0,.085,BLUSH],[-.11,.57,.05,.07,PETALC],[.1,.58,-.04,.072,WINE],
+                  [.04,.66,.09,.06,BLUSH],[-.06,.64,-.09,.058,PETALC],[.13,.63,.04,.05,TERRA]];
+    blooms.forEach(([bx,by,bz,r,mat])=>{
+      const core=new THREE.Mesh(new THREE.SphereGeometry(r*.55,12,10), mat);
+      core.position.set(bx,by,bz); g.add(core);
+      for(let k=0;k<6;k++){
+        const a=k/6*6.28;
+        const petal=new THREE.Mesh(new THREE.SphereGeometry(r*.62,10,8), mat);
+        petal.scale.set(1,.36,.72);
+        petal.position.set(bx+Math.cos(a)*r*.68, by-.008, bz+Math.sin(a)*r*.68);
+        petal.rotation.set(0,-a,.42); g.add(petal);
+      }
+    });
+    g.position.set(x,0,z); return g;
+  }
+
+  function macarons(x,z){
+    const g=new THREE.Group();
+    const cols=[BLUSH,PISTA,CARAMEL,WINE];
+    cols.forEach((c,i)=>{
+      const y=.05+i*.105;
+      const top=new THREE.Mesh(new THREE.SphereGeometry(.105,20,12,0,6.28,0,Math.PI/2), c);
+      top.scale.y=.42; top.position.y=y+.03; g.add(top);
+      const bot=top.clone(); bot.scale.y=-.42; bot.position.y=y-.03; g.add(bot);
+      const cream=new THREE.Mesh(new THREE.CylinderGeometry(.088,.088,.038,20), PETALC);
+      cream.position.y=y; g.add(cream);
+    });
+    g.rotation.y=.4; g.position.set(x,0,z); return g;
+  }
+
+  function teaTin(x,z){
+    const g=new THREE.Group();
+    const t=new THREE.Mesh(new THREE.CylinderGeometry(.155,.155,.44,28), FOREST); t.position.y=.22; g.add(t);
+    const cap=new THREE.Mesh(new THREE.CylinderGeometry(.162,.162,.075,28), GOLD); cap.position.y=.46; g.add(cap);
+    const ring=new THREE.Mesh(new THREE.TorusGeometry(.157,.011,8,28), GOLD);
+    ring.rotation.x=Math.PI/2; ring.position.y=.24; g.add(ring);
+    const crest=new THREE.Mesh(new THREE.CylinderGeometry(.06,.06,.012,20), GOLD);
+    crest.rotation.x=Math.PI/2; crest.position.set(0,.26,.156); g.add(crest);
+    g.position.set(x,0,z); return g;
+  }
+
+  goods.add(
+    posy(-.94,-.3), candle(-.82,.24), honeyJar(-.3,-.22), mug(.02,.24),
+    chocBox(.6,-.16), macarons(.44,.3), teaTin(1.0,-.02)
+  );
+  goods.scale.setScalar(1.12);
+  goods.traverse(o=>{ if(o.isMesh){ o.castShadow=true; o.receiveShadow=true; } });
 
   /* lid + ribbon */
   const lidPivot=new THREE.Group(); lidPivot.position.set(0,H+.05,-D/2); hamper.add(lidPivot);
@@ -2009,6 +2113,8 @@ function build(){
   const lidTop=new THREE.Mesh(new THREE.BoxGeometry(W+.12,.11,D+.12), CREAM); lid.add(lidTop);
   const lidLip=new THREE.Mesh(new THREE.BoxGeometry(W+.02,.16,D+.02), CREAM2); lidLip.position.y=-.11; lid.add(lidLip);
   const foil=new THREE.Mesh(new THREE.BoxGeometry(W*.34,.012,D*.34), GOLD); foil.position.y=.06; lid.add(foil);
+  const lidLiner=new THREE.Mesh(new THREE.BoxGeometry(W-.1,.012,D-.1), MAT(0xD98C7A,.75,.04));
+  lidLiner.position.y=-.185; lid.add(lidLiner);
 
   const SATIN=MAT(0xC0954F,.44,.3); SATIN.envMapIntensity=.5;
   const ribbonG=new THREE.Group(); lid.add(ribbonG);
@@ -2032,12 +2138,16 @@ function build(){
     const c=document.createElement('canvas'); c.width=c.height=256;
     const ctx=c.getContext('2d');
     const g=ctx.createRadialGradient(128,128,10,128,128,124);
-    g.addColorStop(0,'rgba(88,62,36,.72)'); g.addColorStop(.45,'rgba(88,62,36,.34)'); g.addColorStop(1,'rgba(88,62,36,0)');
+    g.addColorStop(0,'rgba(88,62,36,.5)'); g.addColorStop(.45,'rgba(88,62,36,.22)'); g.addColorStop(1,'rgba(88,62,36,0)');
     ctx.fillStyle=g; ctx.fillRect(0,0,256,256);
     const sh=new THREE.Mesh(new THREE.PlaneGeometry(5.4,4),
       new THREE.MeshBasicMaterial({map:new THREE.CanvasTexture(c),transparent:true,depthWrite:false}));
     sh.rotation.x=-Math.PI/2; sh.position.y=.008; root.add(sh);
+    /* real cast shadow catcher */
+    const catcher=new THREE.Mesh(new THREE.PlaneGeometry(16,12), new THREE.ShadowMaterial({opacity:.16}));
+    catcher.rotation.x=-Math.PI/2; catcher.position.y=0; catcher.receiveShadow=true; root.add(catcher);
   })();
+  hamper.traverse(o=>{ if(o.isMesh){ o.castShadow=true; o.receiveShadow=true; } });
 
   /* sparkle particles */
   const COUNT = innerWidth<760 ? 320 : 720;
